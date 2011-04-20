@@ -1,0 +1,23 @@
+<!-- begin of popnup blog block -->
+<{foreach item=blog_user from=$block.popnupblog}>
+	<li>
+	[ <{$blog_user.last_update_s}> ]
+	<{if $blog_user.title}>
+	  <a href='<{$blog_user.url}>'><{$blog_user.title}></a>
+	<{else}>
+	  <{$block._MB_POPNUPBLOG_TITLE_PREFIX}>
+	  <{$blog_user.uname}>
+	  <{$block._MB_POPNUPBLOG_TITLE_SUFFIX}>
+	<{/if}>
+	&nbsp;:&nbsp;<{$blog_user.last_title}>
+	<!--<{$blog_user.last_text|replace:"<img":"<img hspace='5'"}>-->
+	&nbsp;<a href='<{$xoops_url}>/userinfo.php?uid=<{$blog_user.uid}>'><{$blog_user.uname}></a>
+	<!--<{$blog_user.commentuname}>&nbsp<{$blog_user.comment}>-->
+	</li>
+<{/foreach}>
+<hr>
+<{if $block.show_rss eq 1}>
+	<a href="<{$xoops_url}>/modules/popnupblog/rss.php"><img src="<{$xoops_url}>/modules/popnupblog/rss.png" border="0" /></a>
+<{/if}>
+<a href="<{$xoops_url}>/modules/popnupblog/"><{$block._MB_POPNUPBLOG_VSTBLGS}></a>
+<!-- end of popnup blog block -->

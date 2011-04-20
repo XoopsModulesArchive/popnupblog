@@ -1,0 +1,25 @@
+<H2><{$_MD_POPNUPBLOG_ML_RECEPTION}></H2>
+<{$_MD_POPNUPBLOG_ML_APPLIED}>
+<HR>
+<{if $ins_titles}>
+  <H3><{$_MD_POPNUPBLOG_ML_JOIN}></H3>
+  <TABLE class="outer" cellspacing="1">
+  <TR><TH><{$_MD_POPNUPBLOG_TITLE}></TH><TH><{$_MD_POPNUPBLOG_POSTMAILADDR}></TH></TR>
+  <{foreach item=i from=$ins_titles}>
+	<TR><TD><{$i.title}></TD><TD><{$i.pop_address}></TD></TR>
+  <{/foreach}>
+  </TABLE>
+<{/if}>
+<{if $del_titles}>
+  <H3><{$_MD_POPNUPBLOG_ML_LEAVE}></H3>
+  <TABLE class="outer" cellspacing="1">
+  <TR><TH><{$_MD_POPNUPBLOG_TITLE}></TH></TR>
+  <{foreach item=i from=$del_titles}>
+	<TR><TD><{$i.title}></TD></TR>
+  <{/foreach}>
+  </TABLE>
+<{/if}>
+<BR />
+<CENTER>
+<B><a href='index.php'><{$_MD_POPNUPBLOG_RETURN}></a></B>
+</CENTER>
