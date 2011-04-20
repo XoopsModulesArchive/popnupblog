@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<{* $Id: popnupblog_rss.html,v 1.1.1.1 2005/08/28 02:13:10 yoshis Exp $ *}>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" 
+         xmlns="http://purl.org/rss/1.0/" 
+	 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	 xml:lang="ja">
+  <channel rdf:about="<{$channel_link}>">
+    <title><{$channel_title}></title>
+    <link><{$channel_link}></link>
+    <description><{$channel_desc}></description>
+    <items>
+      <rdf:Seq>
+      <{foreach item=item from=$items}>
+        <rdf:li rdf:resource="<{$item.link}>" />
+      <{/foreach}>
+      </rdf:Seq>
+    </items>
+  </channel>
+  <{foreach item=item from=$items}>
+  <item rdf:about="<{$item.link}>">
+    <title>
+      <{if $item.title}>
+        <{$item.title}>
+      <{else}>
+        No Title
+      <{/if}>
+    </title>
+    <link><{$item.link}></link>
+    <description><{$item.desc}></description>
+    <dc:date><{$item.date}></dc:date> 
+    <dc:creator><{$item.uname}></dc:creator> 
+  </item>
+  <{/foreach}>
+</rdf:RDF>

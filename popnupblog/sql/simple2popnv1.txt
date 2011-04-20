@@ -1,0 +1,49 @@
+[simpleblog]			[popnupblog]			Change?
+uid		int(5)		uid		int(5)
+				blogid		int(5)		*
+blog_date	date		blog_date	datetime	*
+title		varchar(200)	title		varchar(200)
+post_text	text		post_text	text
+last_update	timestamp(14)	last_update	timestamp(14)
+
+------
+[simpleblog_application]	[popnupblog_application]
+uid		int(5)		uid		int(5)
+title		varchar(200)	title		varchar(200)
+permission	tinyint(1)	permission	tinyint(1)
+create_date	int(10)		create_date	int(10)
+
+------
+[simpleblog_comment]		[popnupblog_comment]
+uid		int(5)		uid		int(5)
+blog_date	date		blog_date	datetime	*
+comment_id	int(8)		comment_id	int(8)
+comment_uid	int(5)		comment_uid	int(5)
+comment_name	varchar(200)	comment_name	vharchar(200)
+post_text	text		post_text	text
+create_date	timestamp(14)	create_date	datetime	*
+
+------
+[simpleblog_info]		[popnupblog_info]
+uid		int(5)		uid		int(5)
+title		varchar(200)	title		varchar(200)
+blog_permission	tinyint(1)	blog_permission	tinyint(1)
+last_update	timestamp(14)	last_update	timestamp(14)
+				groupid		smallint(5)	*
+				email		varchar(60)	*
+				last_title	varchar(200)	*
+				last_text	text		*
+
+------
+[simpleblog_trackback]		[popnupblog_trackback]
+uid		int(5)		uid		int(5)
+t_date		date		t_date		datetime	*
+count		int(8)		count		int(8)
+title		varchar(250)	title		varchar(250)
+url		text		url		text
+
+------
+				[popnupblog_emailalias]		*
+				uid		int(5)		*
+				public		tinyint(1)	*
+				email		varchar(60)	*

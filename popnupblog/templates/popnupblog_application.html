@@ -1,0 +1,122 @@
+<!-- begin of popnup blog block -->
+<table class="outer" cellspacing="1" width="95%">
+<tr class="outer">
+<th colspan="2"><{$_MD_POPNUPBLOG_NAME}></th>
+</td>
+<tr class="even"><td colspan="5">
+<{if count($bloginfo) gt 0 }>
+	<{$_MD_POPNUPBLOG_APPLICATION_PREFERENCE}></td></tr>
+	<{foreach item=info from=$bloginfo}>
+	<form method="post" action="edit.php">
+	<tr class="head"><td colspan=5>
+		Blog ID : <{$info.bid}><input type="hidden" name="bid" value="<{$info.bid}>" />
+		Last Update : <{$info.lastUpdate}>
+	</td></tr>
+	<tr class="even">
+		<td width="25%"><{$_MD_POPNUPBLOG_TITLE}></td>
+		<td colspan=4>
+		<input type="text" name="title" length="50" value="<{$info.title}>"></input>
+		&nbsp;<{$_MD_POPNUPBLOG_CATEGORY}><{$info.cidselect}>
+	</td></tr>
+	<tr class="even"><td ><span class='fg2'><{$_MD_POPNUPBLOG_DESCRIPTION}></span></td>
+		<td colspan=4><TEXTAREA name='desc' ROWS="3" COLS="50" WRAP="VIRTUAL"><{$info.desc}></TEXTAREA>
+	</td></tr>
+	<{if $GroupSetByUser eq 1 }>
+	<tr class="even">
+		<td rowspan=2><{$_MD_POPNUPBLOG_PERMISSION_TITLE}></td>
+		<td><{$_MD_POPNUPBLOG_GROUPPARMITION}></td>
+		<td><{$_MD_POPNUPBLOG_PERMISSION0}></td>
+		<td><{$_MD_POPNUPBLOG_PERMISSION1}></td>
+		<td><{$_MD_POPNUPBLOG_PERMISSION2}></td>
+	</tr>
+	<tr class="even">
+		<td><{$info.g_post}></td>
+		<td><{$info.g_read}></td>
+		<td><{$info.g_comment}></td>
+		<td><{$info.g_vote}></td>
+	</tr>
+	<{else}>
+	<tr><td width="25%"></td><td width="25%"></td><td width="25%"></td><td width="25%"></td></tr>
+	<{/if}>
+	<tr class="even"><td><{$_MD_POPNUPBLOG_POSTMAILADDR}></td>
+		<td colspan=4>
+		<input type="text" name="email" value="<{$info.email}>" />
+		&nbsp;<{$_MD_POPNUPBLOG_FORM_ADMIN_USAGE}><BR />
+		<{$mail_prefix}>
+		</td>
+	</tr>
+	<tr class="even"><td ><{$_MD_POPNUPBLOG_POSTMAILADDR}><p><{$_MD_POPNUPBLOG_MAIL_SECONDLY}></td>
+		<td colspan=2>
+		<select name="emailalias[]" size="5" multiple='multiple' style="width: 250px;">
+		<{$info.emailalias_options}>
+		</select>
+		<input type="submit" name="remove_mailalias" value="<{$_MD_POPNUPBLOG_REMOVE}>" />
+		</td>
+		<td colspan=2>
+		<{$_MD_POPNUPBLOG_UNAME}>&nbsp;
+		<input type="text" SIZE="8" name="alias_uname" value="<{$alias_uname}>" />
+		<input type="submit" name="confirm_mailalias" value="<{$_MD_POPNUPBLOG_CONFIRM}>" />
+		<br />
+		email&nbsp;<input type="text" name="emailalias_txt" value="<{$alias_email}>" />
+		<input type="hidden" name="alias_uid" value="<{$alias_uid}>" />
+		<input type="submit" name="add_mailalias" value="<{$_MD_POPNUPBLOG_ADD}>" />
+		</td>
+	</tr>
+	<tr class="even"><td><{$_MD_POPNUPBLOG_SENDMAILADDR}></td><td colspan=2>
+		<select name="emailsends[]" size="5" multiple='multiple' style="width: 250px;">
+		<{$info.emailsends_options}>
+		</select>
+		<input type="submit" name="remove_mailsends" value="<{$_MD_POPNUPBLOG_REMOVE}>" />
+		</td><td colspan=2>
+		<{$_MD_POPNUPBLOG_UNAME}>&nbsp;
+		<input type="text" SIZE="8" name="sends_uname" value="<{$sends_uname}>" />
+		<input type="submit" name="confirm_mailsends" value="<{$_MD_POPNUPBLOG_CONFIRM}>" />
+		<br />
+		email&nbsp;<input type="text" name="emailsends_txt" value="<{$sends_email}>" />
+		<input type="hidden" name="sends_uid" value="<{$sends_uid}>" />
+		<input type="submit" name="add_mailsends" value="<{$_MD_POPNUPBLOG_ADD}>" />
+	</tr>
+	<tr><td colspan="5" align="center">
+		<input type="submit" value=<{$_MD_POPNUPBLOG_FORM_SEND}> name="updatepreference" />
+	</td></tr>
+	</form>
+	<{/foreach}>
+<{else}>
+    <{$_MD_POPNUPBLOG_APPLICATION_HEAD}></td></tr>
+	<form method="post" action="application.php">
+	<tr class="even"><td width="25%"><{$_MD_POPNUPBLOG_TITLE}></td><td colspan=4>
+		<input type="text" name="title" length="50" value=""></input>
+		&nbsp;<{$_MD_POPNUPBLOG_CATEGORY}><{$categories}>
+	</td></tr>
+	<tr class="even"><td ><span class='fg2'><{$_MD_POPNUPBLOG_DESCRIPTION}></span></td>
+		<td colspan=4><TEXTAREA name='desc' ROWS="3" COLS="50" WRAP="VIRTUAL"></TEXTAREA>
+	</td></tr>
+	<{if $GroupSetByUser eq 1 }>
+	<tr class="even">
+		<td rowspan=2><{$_MD_POPNUPBLOG_PERMISSION_TITLE}></td>
+		<td><{$_MD_POPNUPBLOG_GROUPPARMITION}></td>
+		<td><{$_MD_POPNUPBLOG_PERMISSION0}></td>
+		<td><{$_MD_POPNUPBLOG_PERMISSION1}></td>
+		<td><{$_MD_POPNUPBLOG_PERMISSION2}></td>
+	</tr>
+	<tr class="even">
+		<td><{$g_post}></td>
+		<td><{$g_read}></td>
+		<td><{$g_comment}></td>
+		<td><{$g_vote}></td>
+	</tr>
+	<{else}>
+	<tr><td width="25%"></td><td width="25%"></td><td width="25%"></td><td width="25%"></td></tr>
+	<{/if}>
+	<tr class="even"><td><{$_MD_POPNUPBLOG_POSTMAILADDR}></td><td colspan=4>
+		<{$_MD_POPNUPBLOG_MAIL_PRIMARY}><input type="text" name="email" value="" />
+		<{$_MD_POPNUPBLOG_MAIL_SECONDLY}><input type="text" name="emailalias" value="" /></td>
+	</tr>
+	<tr>
+	<td colspan="4" align="center">
+		<input type="submit" name="submit" value="<{$_MD_POPNUPBLOG_APPLICATION_SUBMIT}>" />
+	</tr>
+<{/if}>
+	</form>
+</table>
+<!-- end of popnup blog block -->

@@ -1,0 +1,199 @@
+<{* $Id: popnupblog_view.html,v 1.2 2005/09/03 11:38:11 yoshis Exp $ *}>
+<h1><{$blog_title}></h1>
+<div id="pblog-wrapper">
+<div id="pblog-con">
+<!-- begin of popnup blog main block -->
+<script language="JavaScript">
+<!-- Altanate Contents By Yoshi @ bluemooninc.biz
+  function showhide(id){
+    if(document.getElementById){
+      if(document.getElementById(id).style.display == "none")
+        document.getElementById(id).style.display = "block";
+      else
+        document.getElementById(id).style.display = "none";
+    }
+  }
+-->
+</script>
+
+<li><{$blog_desc}></li>
+<div align="right">
+<{if $popnupblog_votable eq true}>
+  <a href="<{$xoops_url}>/modules/popnupblog/index.php?param=<{$params}>&vote=1">
+  <{$smarty.const._MD_POPNUPBLOG_VOTERANKING}>
+  </a>
+<{/if}>
+<{if $popnupblog_editable eq true}>
+  <a href="<{$xoops_url}>/modules/popnupblog/edit.php?today=<{$popnupblog_targetBid}>">
+    <{$smarty.const._MD_POPNUPBLOG_WRITE}>
+  </a>
+<{/if}>
+</div>
+<{if count($popnupblog_blogdata) gt 0 }>
+  <!--<{if $popnupblog_editable eq true}>
+      <a href="<{$xoops_url}>/modules/popnupblog/edit.php?param=<{$popnupblog_targetBid}>">
+      [<{$smarty.const._MD_POPNUPBLOG_LINK_EDIT}>]</a>
+  <{/if}>-->
+  <{foreach from=$popnupblog_index item=year key=key}>
+  <div align="right"><{$key}>
+  <{foreach from=$year item=month }> | <a href='<{$month.url}>'><{$month.month}></a><{/foreach}></div>
+  <{/foreach}>
+  <!--<{counter start=0 skip=1}>-->
+  <{foreach item=i from=$popnupblog_blogdata}>
+  <div class="pblog-box-fff">
+    <{if count($popnupblog_blogdata) eq 1 and $i.url|regex_replace:'/.*-/':''|count_characters eq 14}>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+      <rdf:Description
+       rdf:about="<{$i.url}>"
+       dc:identifier="<{$i.url}>"
+       dc:title="<{$i.title}>"
+       trackback:ping="<{$i.url|replace:'index.php?param=':'trackback.php/'}>" />
+      </rdf:RDF>
+    <{/if}>
+    <!--<td class="even" width="1%" rowspan="3" valign="middle"><{counter}>.</td>-->
+      <h2>
+        <a href="<{$xoops_url}>/modules/popnupblog/index.php?postid=<{$i.postid}>"><b><{$i.title}></b></a>
+        <{if $popnupblog_editable eq true}>
+          <{if $i.uid eq $xoops_userid || $blog_uid eq $xoops_userid || $popnupblog_admin eq true }>
+          <!-- $popnupblog_editable eq true -->
+          <a href="<{$xoops_url}>/modules/popnupblog/edit.php?postid=<{$i.postid}>">[<{$smarty.const._MD_POPNUPBLOG_LINK_EDIT}>]</a>
+          <{/if}>
+        <{/if}>
+      </h2>
+      <div id="pblog-posted">
+        <a href='<{$xoops_url}>/userinfo.php?uid=<{$i.uid}>'><{$i.uname}></a>&nbsp;
+        <!--<a href="<{$xoops_url}>/modules/popnupblog/index.php?param=<{$popnupblog_targetBid}>-<{$i.year}><{$i.month}><{$i.date}>"><{$i.date_str}></a>-->
+        <{$i.date_str}>&nbsp;<{$i.hours}>:<{$i.minutes}>&nbsp;&nbsp;
+      </div>
+    <div class="pblog-box-inner">
+      <div class="comText">
+        <{$i.post_text|replace:"<img":"<div style='clear:both'></div><img hspace='5' vspace='5'"}>
+      </div>
+  
+    <{if $popnupblog_commentable eq true or $popnupblog_votable eq true}>
+      <form action="<{$xoops_url}>/modules/popnupblog/votenow.php" method="post">
+      <input type="hidden" name="targetUid" value="<{$popnupblog_targetUid}>" />
+    <{/if}>
+  
+    <!-- Comment Read Area -->
+    <{if count($i.comments) gt 0 }>
+      <HR>
+      <{foreach item=j from=$i.comments}>
+         <div title="<{$j.create_date}>"><{$j.create_date_m}>
+         <{if $j.comment ne '' or ($j.uid eq $popnupblog_uid)}>
+           <{$j.name}>&nbsp;
+           <{if $j.commentedit==true }>
+             <a href="<{$xoops_url}>/modules/popnupblog/commentedit.php?comment_id=<{$j.id}>">[<{$smarty.const._MD_POPNUPBLOG_LINK_EDIT}>]</a>
+           <{/if}>
+           <{if ($j.vote ne 0) }>
+              <{if ($j.uid eq $popnupblog_uid) }>
+                  <{$smarty.const._MD_POPNUPBLOG_FORM_VOTE}>:
+                  <{if $j.vote eq 1}><{$smarty.const._MD_POPNUPBLOG_FORM_YES}><{/if}>
+                  <{if $j.vote eq -1}><{$smarty.const._MD_POPNUPBLOG_FORM_NO}><{/if}>
+              <{else}>
+                  <{$smarty.const._MD_POPNUPBLOG_VOTED}>:
+              <{/if}>
+           <{/if}>
+           </div>
+           <div style="margin-left: 10px; margin-right: 10px; padding: 4px; background-color:#E6E6E6; border-color:#999999;" class="outer">
+           <{$j.comment}>
+           </div>
+          <{/if}>
+      <{/foreach}>
+    <{/if}>
+    <!-- Vote Parcentage Area -->
+    <{if $i.votes_all gt 0 }>
+          <{$smarty.const._MD_POPNUPBLOG_VOTEREASULT}>
+          <{$i.votes_all}><{$smarty.const._MD_POPNUPBLOG_VOTEALL}>
+          <{$smarty.const._MD_POPNUPBLOG_FORM_YES}>
+            <{if $i.votes_yes_par gt 0 }>
+              <div style="background-color: #9999ff; border: 1px solid #777777; text-align: center; width: <{$i.votes_yes_pix}>px">
+              (<{$i.votes_yes}>)&nbsp;<{$i.votes_yes_par}>%</div>
+            <{/if}>
+          <{$smarty.const._MD_POPNUPBLOG_FORM_NO}>
+            <{if $i.votes_no_par gt 0 }>
+              <div style="background-color: #9999ff; border: 1px solid #777777; text-align: center; width: <{$i.votes_no_pix}>px">
+              (<{$i.votes_no}>)&nbsp;<{$i.votes_no_par}>%</div>
+            <{/if}>
+    <{/if}>
+    <!-- Comment and Vote input Area -->
+    <{if $popnupblog_commentable eq true}>
+        <input type="hidden" name="param" value="<{$popnupblog_targetBid}>-<{$i.year}><{$i.month}><{$i.date}><{$i.hours}><{$i.minutes}><{$i.seconds}>" />
+        <input type="hidden" name="postid" value="<{$i.postid}>" />
+        <!--
+        <{$smarty.const._MD_POPNUPBLOG_FORM_NAME}>:
+        <{if $popnupblog_uname eq ""}>
+            <input type="text" name="commentersname" value="" size="10" />@<{$smarty.const._MD_POPNUPBLOG_FORM_GUEST}>&nbsp
+        <{else}>
+            <input type="hidden" name="commentersname" value="<{$popnupblog_uname}>" />
+            <{$popnupblog_uname}>
+        <{/if}>
+        -->
+        <DIV Align="right">
+        [<a href="<{$xoops_url}>/modules/popnupblog/commentedit.php?postid=<{$i.postid}>"><{$smarty.const._MD_POPNUPBLOG_LEAVEACOMMENT}></a>]
+        </DIV>
+    <{/if}>
+    <CENTER>
+    <{if $popnupblog_votable eq true}>
+        <!--<input type="hidden" name="param" value="<{$popnupblog_targetBid}>-<{$i.year}><{$i.month}><{$i.date}><{$i.hours}><{$i.minutes}><{$i.seconds}>" />-->
+        <input type="hidden" name="postid" value="<{$i.postid}>" />
+        <{$smarty.const._MD_POPNUPBLOG_FORM_VOTE}>:
+        <input type="radio" name="vote" value=1><{$smarty.const._MD_POPNUPBLOG_FORM_YES}></input>
+        <input type="radio" name="vote" value=-1><{$smarty.const._MD_POPNUPBLOG_FORM_NO}></input>
+    <{/if}>
+    <{if $popnupblog_commentable eq true or $popnupblog_votable eq true}>
+        <input type="submit" value="<{$smarty.const._MD_POPNUPBLOG_FORM_SEND}>" />
+        </form>
+    <{/if}>
+    </CENTER>
+    <!-- TrackBack Area -->
+    <{if count($i.trackbacks) gt 0 }>
+      <br />
+      <a href="JavaScript:showhide('<{$i.date}><{$i.hours}><{$i.minutes}><{$i.seconds}>')"><{$smarty.const._MD_POPNUPBLOG_TRACKBACK}>
+          &nbsp;(<{$i.tb_count}>)</a>
+      <div id="<{$i.date}><{$i.hours}><{$i.minutes}><{$i.seconds}>" style="display:none;">
+      <hr />
+      <{foreach item=tb from=$i.trackbacks}>
+          <li><{$tb.count}><a href="<{$tb.url}>" target="_blank">
+              <{if $tb.title }><{$tb.title}><{else}><{$tb.url}><{/if}></a>
+      <{/foreach}>
+      </div>
+    <{/if}>
+    <{if $i.trackback_url }>
+      <div align="right">[<a href="<{$i.trackback_url}>">TrackBack</a>]</div>
+    <{/if}>
+    </div>
+  </div>
+  <{/foreach}>
+<{else}>
+  [ No blog ]
+<{/if}>
+<{$jump_url}>
+<br />PopnupBlog <{$POPNUPBLOG_VERSION}> created by 
+<a href="http://www.bluemooninc.biz/" target="_blank">Bluemoon inc.</a> &nbsp; 
+<a href="http://feeds.archive.org/validator/check?url=<{$popnupblog_user_rss}>" target="_blank">
+<img src="<{$xoops_url}>/modules/popnupblog/rss-valid-line.gif" border="0"></a> 
+<a href="<{$popnupblog_user_rss}>"><img src="<{$xoops_url}>/modules/popnupblog/rss10.gif" border="0" /></a>
+
+<!-- XOOPS Buit-in comment
+<div style="text-align: center; padding: 3px; margin: 3px;">
+  <{$commentsnav}>
+  <{$lang_notice}>
+</div>
+<div style="margin: 3px; padding: 3px;">
+<{if $comment_mode == "flat"}>
+  <{include file="db:system_comments_flat.html"}>
+<{elseif $comment_mode == "thread"}>
+  <{include file="db:system_comments_thread.html"}>
+<{elseif $comment_mode == "nest"}>
+  <{include file="db:system_comments_nest.html"}>
+<{/if}>
+</div>
+-->
+<{include file='db:system_notification_select.html'}>
+
+<!-- end of popnup blog main block -->
+</div>
+</div>
