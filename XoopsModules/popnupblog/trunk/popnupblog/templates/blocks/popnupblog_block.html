@@ -1,0 +1,37 @@
+<!-- begin of popnup blog block -->
+<table class="head" cellspacing="1" width="100%">
+  <tr>
+    <th><{$block._MB_POPNUPBLOG_BLOG_TITLE}></th>
+    <th><{$block._MB_POPNUPBLOG_BLOGGER_NAME}></th>
+    <th><{$block._MB_POPNUPBLOG_UPDATE_DATE}></th>
+    <th><{$block._MB_POPNUPBLOG_TITLE}></th>
+  </tr>
+<{foreach item=blog_user from=$block.popnupblog}>
+  <tr class="<{cycle values="even,odd"}>">
+    <td align="left">
+      <{if $blog_user.title}>
+        <a href='<{$blog_user.url}>'><{$blog_user.title}></a>
+      <{else}>
+        <a href='<{$blog_user.url}>'>
+          <{$block._MB_POPNUPBLOG_TITLE_PREFIX}>
+          <{$blog_user.uname}>
+          <{$block._MB_POPNUPBLOG_TITLE_SUFFIX}>
+        </a>
+      <{/if}>
+    </td>
+    <td align="left"><{$blog_user.uname}></td>
+    <td align="right"><{$blog_user.last_update_m}></td>
+    <td align="left"><{$blog_user.last_title}></td>
+  </tr>
+<{/foreach}>
+<{if $block.show_rss eq 1}>
+  <tr><td align="right" colspan="4">
+  <a href="http://feeds.archive.org/validator/check?url=<{$xoops_url}>/modules/popnupblog/rss.php" target="_blank">
+  <img src="<{$xoops_url}>/modules/popnupblog/rss-valid-line.gif" border="0"></a>
+  <a href="<{$xoops_url}>/modules/popnupblog/rss.php">
+  <img src="<{$xoops_url}>/modules/popnupblog/rss.png" border="0" /></a> 
+  <a href="<{$xoops_url}>/modules/popnupblog/"><{$block._MB_POPNUPBLOG_VSTBLGS}></a>
+  </td></tr>
+<{/if}>
+</table>
+<!-- end of popnup blog block -->

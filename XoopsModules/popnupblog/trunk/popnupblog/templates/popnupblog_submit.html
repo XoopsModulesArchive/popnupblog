@@ -1,0 +1,75 @@
+<script type="text/javascript">
+<!--
+$(document).ready(function() {
+	// Add markItUp! to your textarea in one line
+	// $('textarea').markItUp( { Settings }, { OptionalExtraSettings } );
+	$('#markItUp').markItUp(mySettings);
+	
+	// by makinosuke @ 2008.12.28
+	$('#markItUp').css({width: ($('#markItUpMarkItUp').css({width: '100%'}).width() - 12) + 'px'});
+	
+});
+-->
+</script>
+<div id="pblog-wrapper">
+	<h1 id="pblog-head"><{$lang_edit_pagetitle}></h1>
+    <div id="pblog-con">
+		<{if $tplsig_edit_ispreview}>
+			<table class="pblog-thread-nowediting">
+				<thead><tr><th><{$lang_edit_ref_subject}></th></tr></thead>
+				<tbody><tr><td><{$pblog_edit_ref_message}></td></th></tbody>
+			</table>
+		<{/if}>
+		<{$pblog_edit_defaultjs}>
+		<form<{$pblog_edit_form_attrs}>>
+			<{$pblog_edit_xoops_gticket}>
+			<table id="pblog-forms">
+				<thead><tr><th colspan="2"><{$lang_edit_editpost}></th></tr></thead>
+				<tbody>
+					<tr>
+						<th><{$lang_select_blog}></th>
+						<td><{$pblog_edit_selectblog}></td>
+					</tr>
+					<tr>
+						<th><{$pblog_edit_postid}><{$lang_edit_subject}></th>
+						<td><input <{$pblog_edit_subject_input_attrs}>></td>
+					</tr>
+					<tr>
+						<th><{$lang_edit_message|replace:":":""}></th>
+						<td><{$pblog_edit_message}></td>
+					</tr>
+					<{if $pblog_edit_attach}>
+					<tr>
+						<th><{$lang_edit_attach|replace:":":""}></th>
+						<td><{$pblog_edit_attach}><br /><{$pblog_edit_uptypes}></td>
+					</tr>
+					<{/if}>
+					<tr>
+						<th><{$lang_edit_option|replace:":":""}></th>
+						<td>
+							<{$pblog_edit_option_approve}>
+							<{$pblog_edit_option_notify}>
+						</td>
+					</tr>
+					<tr>
+						<th><{$lang_edit_tb_title}></th>
+						<td><input <{$pblog_edit_tb_input_attrs}>></td>
+					</tr>
+					<tr>
+						<th><{$lang_edit_trackback}></th>
+						<td>
+							<{foreach name=outer item=tb from=$pblog_edit_trackbacks}>
+								<li><{$tb}></li>
+							<{/foreach}>
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr><td colspan="2">
+						<{$pblog_edit_delete}>&nbsp;<{$pblog_edit_preview}>&nbsp;<{$pblog_edit_submit}>
+					</td></tr>
+				</tfoot>
+			</table>
+		</form>
+	</div>
+</div>

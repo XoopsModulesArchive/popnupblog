@@ -1,0 +1,138 @@
+/* -------------------------------------------------------------------
+// markItUp!
+// By Jay Salvat - http://markitup.jaysalvat.com/
+// ------------------------------------------------------------------*/
+.markItUp .newbb-markitup-bold a	{
+	background-image:url(images/bold.png);
+}
+.markItUp .newbb-markitup-italic a	{
+	background-image:url(images/italic.png);
+}
+.markItUp .newbb-markitup-underline a	{
+	background-image:url(images/underline.png);
+}
+.markItUp .newbb-markitup-delete a	{
+	background-image:url(images/stroke.png);
+}
+
+.markItUp .newbb-markitup-picture a	{
+	background-image:url(images/picture.png);
+}
+.markItUp .newbb-markitup-link a	{
+	background-image:url(images/link.png);
+}
+
+.markItUp .newbb-markitup-color a	{
+	background-image:url(images/colors.png);
+}
+.markItUp .newbb-markitup-color ul {
+	width:81px;
+	padding:1px;	
+}
+.markItUp .newbb-markitup-color  li {
+	border:1px solid white;
+	width:25px;	height:25px;
+	overflow:hidden;
+	padding:0px; margin:0px;
+	float:left;
+}
+.markItUp .newbb-markitup-color ul a {
+	width:25px;	height:25px;
+}
+.markItUp .newbb-markitup-color ul a:hover {
+	background-color:none;
+}
+.markItUp .newbb-markitup-color .col1-1 a {
+	background:#FCE94F;
+}
+.markItUp .newbb-markitup-color .col1-2 a {
+	background:#EDD400;
+}
+.markItUp .newbb-markitup-color .col1-3 a {
+	background:#C4A000;
+}
+
+.markItUp .newbb-markitup-color .col2-1 a {
+	background:#FCAF3E;
+}
+.markItUp .newbb-markitup-color .col2-2 a {
+	background:#F57900;
+}
+.markItUp .newbb-markitup-color .col2-3 a {
+	background:#CE5C00;
+}
+
+.markItUp .newbb-markitup-color .col3-1 a {
+	background:#E9B96E;
+}
+.markItUp .newbb-markitup-color .col3-2 a {
+	background:#C17D11;
+}
+.markItUp .newbb-markitup-color .col3-3 a {
+	background:#8F5902;
+}
+
+.markItUp .newbb-markitup-color .col4-1 a {
+	background:#8AE234;
+}
+.markItUp .newbb-markitup-color .col4-2 a {
+	background:#73D216;
+}
+.markItUp .newbb-markitup-color .col4-3 a {
+	background:#4E9A06;
+}
+							
+.markItUp .newbb-markitup-color .col5-1 a {
+	background:#729FCF;
+}
+.markItUp .newbb-markitup-color .col5-2 a {
+	background:#3465A4;
+}
+.markItUp .newbb-markitup-color .col5-3 a {
+	background:#204A87;
+}
+
+.markItUp .newbb-markitup-color .col6-1 a {
+	background:#AD7FA8;
+}
+.markItUp .newbb-markitup-color .col6-2 a {
+	background:#75507B;
+}
+.markItUp .newbb-markitup-color .col6-3 a {
+	background:#5C3566;
+}
+
+.markItUp .newbb-markitup-color .col7-1 a {
+	background:#EF2929;
+}
+.markItUp .newbb-markitup-color .col7-2 a {
+	background:#CC0000;
+}
+.markItUp .newbb-markitup-color .col7-3 a {
+	background:#A40000;
+}
+
+.markItUp .newbb-markitup-color .col8-1 a {
+	background:#888A85;
+}
+.markItUp .newbb-markitup-color .col8-2 a {
+	background:#555753;
+}
+.markItUp .newbb-markitup-color .col8-3 a {
+	background:#000000;
+}
+
+.markItUp .newbb-markitup-size a	{
+	background-image:url(images/fonts.png);
+}
+
+.markItUp .newbb-markitup-quote a	{
+	background-image:url(images/quotes.png);
+}
+.markItUp .newbb-markitup-code a	{
+	background-image:url(images/code.png);
+}
+	
+.markItUp .newbb-markitup-clean a {
+	background-image:url(images/clean.png);
+}

@@ -1,0 +1,332 @@
+-------------------------------------------------------------------------------
+Pop'n'Up Blog Document
+-------------------------------------------------------------------------------
+Module Name  : PopnupBlog
+Code Name    : Redwood City.
+Auther       : Yoshi Sakai ( webmaster@bluemooninc.biz )
+Company      : Bluemoon inc. ( http://www.bluemooninc.biz/ )
+Start date   : 08,Mar,2004
+License under: GPL 2.00 ( Donation Welcome! Contact auther. )
+-------------------------------------------------------------------------------
+Based By : SimpleBLOG V0.2.1RC2. http://sourceforge.jp/projects/xoops-modules/
+-------------------------------------------------------------------------------
+2.5 Highlight
+-------------
+CAUTION!!! Database tables have been changed. See update info ver2.4 to ver2.5 below.
+  Group post permission can be set as multiple with XOOPS groups. 
+
+2.4 Highlight
+-------------
+CAUTION!!! Database tables have been changed. See update info ver2.3 to ver2.4 below.
+ Added plugin function for mail posting.
+
+2.3 Highlight
+-------------
+CAUTION!!! Database tables have been changed. See update info ver2.2 to ver2.3 below.
+  Group read/comment/vote permission can be set as multiple with XOOPS groups. 
+
+2.2 Highlight
+-------------
+CAUTION!!! Database tables have so many changed. See update info ver2.1 to ver2.2 below.
+  Time zone free by postid parameter. 
+  Bugfix about RSS,Trackback.
+  Security update.
+
+2.1 Highlight
+-------------
+  Unlimitted mail addresses can be registered each blog. 
+  Support mailling list for each blog.
+  Support private mode. register with email address.
+  Support XOOPS notification event.
+
+2.0 Highlight
+-------------
+CAUTION!!! Database tables have so many changed. See update info ver1.xx to ver2.00
+  User can own several blogs. Admin can set a max blogs ($maxuserblogs) in pop.ini.php.
+  User can edit blogs information. Category, Title, Email, etc.
+  Support categories. Admin can make categories. User can chose it.
+  Support list view mode. With or without contents, Category filter, Page controller.
+  Support VOTE mode. You can vote yes or no and see it by ranking chart.
+
+-------------------------------------------------------------------------------
+Update information
+-------------------------------------------------------------------------------
+************************
+SimpleBlog to PopnupBlog
+************************
+If you used simpleblog_popnup user, 
+1.Backup as the SQL file about SimpleBlog 5 Tables using PnpMyAdmin, Backup Module, etc.
+2.Open the backup sql file and rename 'SimpleBlog' to 'PopnupBlog'.
+3.Type Change
+ [TABLE] popnupblog
+	blog_date DATE not null, -> blog_date DATETIME not null,
+ [TABLE] popnupblog_comment
+	blog_date DATE not null, -> blog_date DATETIME not null,
+ [TABLE] popnupblog_trackback
+	t_date DATE not null, -> t_date DATETIME not null,
+4.Restore your sql.
+Porting is finish. Happy Hacking!
+
+*********************
+Update v1.2x to v1.33
+*********************
+1.Edit 2 Tables using PhpMyAdmin or etc.
+
+ [TABLE] popnupblog_info
+	add 'last_title varchar(200) binary' after email
+ [TABLE] popnupblog_comment
+	create_date TIMESTAMP not null -> create_date DATETIME not null
+2.Rename pop.ini.php for escape your setting.
+3.Extruct popnupblog130.zip to module.
+4.Rename pop.ini.php from escape your setting.
+5.Module update in admin menu.
+
+*********************
+Update v1.4x to v1.48
+*********************
+1.Add parameter for MySQL table.
+ [TABLE] popnupblog_info
+	add after uid to `groupid` smallint(5) unsigned NOT NULL default '0',
+ [TABLE] popnupblog
+	add after uid to `blogid` int(5) unsigned NOT NULL default '0',
+
+2.update blogid as uid on MySQL table.
+ [Run SQL]
+	update `xoops_popnupblog` set blogid=uid;
+
+*********************
+Update v1.51 to v1.52
+*********************
+1.Edit 1 Table using PhpMyAdmin or etc.
+
+ [TABLE] popnupblog_info
+	add 'last_text text' after last_title
+
+*********************
+Update v1.xx to v2.00
+*********************
+You have to change mysql tables same as new mysql.sql on version2.
+
+1.Add new tabble xoops_popnupblog_categories. See mysql.sql in sql folder.
+  You have to create a table from phpmyadmin or other mysql admin tools.
+2.Modify a xoops_popnupblog_info.
+  Delete a last_title field. (update after Ver1.33)
+  Delete a last_text field. (update after Ver1.52)
+  Add a blogid int(5) unsigned NOT NULL auto_increment, (befor uid)
+  Input to blogid which same as uid value.
+  Add a cat_id smallint(5) unsigned NOT NULL default '0', (befor title)
+  Add a blog_desc text, (after title)
+  Change PRIMARY KEY (blogid)
+3.Modify a xoops_popnupblog.
+  Add a votes_yes int(5) unsigned NOT NULL default '0', (after las_update)
+  Add a votes_no int(5) unsigned NOT NULL default '0', (after vote_yes)
+  Change PRIMARY KEY  (blogid, blog_date)
+4.Modify a xoops_popnupblog_comment.
+  Change field name uid to a blogid.
+  Add a vote tinyint(1) NOT NULL default '0', (after create_date)
+  Change KEY (blogid, blog_date) and key name change to blogid. (not a primary key)
+5.Modify a xoops_popnupblog_application.
+  Add a groupid smallint(5) unsigned NOT NULL default '0',(after uid)
+  Add a cat_id smallint(5) unsigned NOT NULL default '0',(after groupid)
+  Add a blog_desc text, (after title)
+  Change field type to timestamp(14) at create_date field.
+  Add a email varchar(60) , (after create_date)
+  Add a emailalias varchar(60) ,(after emailalias)
+6.Modify a xoops_popnupblog_trackback.
+  Change field name uid to a blogid.
+  Change KEY(blogid, t_date) and key name change to blogid. (not a primary key)
+7.Modify a xoops_popnupblog_emailalias.
+  Change field name uid to a blogid.
+  Change PRIMARY KEY (blogid)
+
+*********************
+Update v2.0x to v2.1x
+*********************
+1.Modify a xoops_popnupblog_emailalias.
+  Add a `uid` int(5) unsigned NOT NULL default '0', after email.
+  Change PRIMARY KEY (`blogid`,`public`,`email`)
+
+*********************
+Update v2.1 to v2.2
+*********************
+Login as admin and run XOOPS_URL/modules/popnupblog/admin/sqlupdate.php by browser.
+
+*********************
+Update v2.2 to v2.3
+*********************
+Login as admin and run XOOPS_URL/modules/popnupblog/admin/sqlupdate22to23.php by browser.
+
+*********************
+Update v2.3 to v2.4
+*********************
+Login as admin and run XOOPS_URL/modules/popnupblog/admin/sqlupdate23to24.php by browser.
+
+*********************
+Update v2.4 to v2.5
+*********************
+Login as admin and run XOOPS_URL/modules/popnupblog/admin/sqlupdate24to25.php by browser.
+
+
+--------------------------------------------------------------------------------Version 2 Code Name - Redwood City.
+--------------------------------------------------------------------------------
+V2.00 2004/12/14 alpha-1
+Rev.a 2004/12/16 Bugfix about strings format at notify email of a comment.
+                 Fix french by Outch.
+Rev.b 2004/12/17 Bugfix about popnupblog_view.html ( It couldn't hide 0 vote. )
+Rev.c 2004/12/18 Bugfix about commentedit.php ( It couldn't update your comment. )
+Rev.d 2004/12/20 Bugfix about create a new blog without admin approval. Bugfix about edit blog after post.
+V2.01 2004/12/21 Change permission field type. Cause permission has a rank like value. (Admin=7, mod=6, user=1, guest=0)
+---------------> popnupblog_application (permission smallint (1) unsigned NOT NULL default '0')
+---------------> popnupblog_info (blog_permission smallint (1) unsigned NOT NULL default '0Åf)
+<<<<<<<<<<<<<<<< Please reset a permission of each blog after update.
+                 Add a BlogCNF['default_view'] to pop.ini.php for default view mode switch.
+                 Show trackback list at popnupblog_view.html. And receive a track back from PukiWiki (B-Wiki) by jitte.
+                 Create a log file in upload folder when someone to download.
+                 Bugfix about make a void file when post from a email with non-image files.
+                 Bugfix about page control.
+Rev.a 2005/01/06 Bugfix about anonymous post from email. ( Set $guestpost_blogid in pop.ini.php )
+V2.02 2005/01/13 Bugfix about unlink to original image. 
+                 Bugfix about couldn't get a recently comment on blog list.
+                 Bugfix about couldn't point from XOOPS search results.
+                 Support localize for track back strings from serch engine. add a parameter $tb_by_serchengine at pop.ini.php.
+                 Support hide referer at blog view. add a parameter $hide_referer at pop.ini.php.
+V2.03 2005/01/21 Add a new function of email notification about new blog entry.
+                 Move $admin_approve to preference by admin from pop.ini.php.
+                 Move $guestpost_uid to preference by admin from pop.ini.php.
+                 New Option replace user name with real name on preference by admin.
+Rev.a 2005/01/24 Bugfix about it can't attach no image file any.
+Rev.b 2005/01/25 Bugfix about it can't post after preview.
+Rev.c 2005/01/25 Bugfix about it can't allow to any brog by guest user.
+Rev.d 2005/01/25 Support html code for blog description area.
+V2.04 2005/01/30 Add a new function of notify to contributor of mail contribution.
+Rev.a 2005/02/04 Bugfix about whiteout when guest click any blog with set a real name option.
+Rev.b 2005/02/06 Allow userinfo.php when click a username at blog list. Renew French by Outch.
+Rev.c 2005/02/09 Diny sub menu setup by user when admin set to 'Not allow to application for user'.
+Rev.d 2005/02/17 Support Gmail by Jan.C
+V2.05 2005/02/24 Add validation to email subject. 'b'+ your blog id + comma. like this 'b1,Subject strings'
+Rev.a 2005/02/26 Bugfix about accept anonymous mail posting.
+Rev.b 2005/03/05 Add 2 Languages. Portuguesebr by Douglas. Nederlands by Ozzy.
+Rev.c 2005/03/05 Add $BlogCNF['blockview'] for View mode on top block (0 = Full, 1 = Strip image and tag)
+Rev.d 2005/03/06 Add simple2popnv1.php, simple2popnv2.php by Aotake. (http://xoops.bmath.org/)
+V2.10 2005/03/22 Unlimitted resister email address. Support Private, mailling list and XOOPS notify.
+---------------> See [Update v2.0x to v2.1x] on this document.
+--- Redwood-325a Bug fix about Clean install error and missmatch uname at email list on preference.
+--- Redwood-325b Bug fix about Guest white-out problem.
+--- Redwood-329  Bug fix about disappearing of email list at preference edits.
+--- Redwood-330  Add $BlogCNF['use_sitefrom'] for mailing list from address ( 0 = Blog Poster, 1 = Site from as preference)
+--- Redwood-331  Bug fix about ContentType for attached file on mailling list mail.
+--- Redwood-401  Bug fix about filename by post from email when blog set a real name mode.
+--- Redwood-405  Add a title check when user makes an application. It doesn't make a same title blog.
+--- Redwood-406  Support auto-embed for multimedia files.
+--- Redwood-408  Support real name mode for mailing list.
+--- Redwood-415  Bug fix about search from XOOPS user list.
+--- Redwood-427  Bug fix about 'Cannot re-assign $this' Error. notice by John.
+--- Redwood-605  Update admin menu.
+--- Redwood-617  Get a pukiwiki trackback by ox10.net. Update French by Outch.
+--- Redwood-716  Alternate display for trackbacks.
+--- Redwood-803  Bug fix about getDateFromHttpParams in PopnupBlogUtils.php.
+                 Change parameter $maxuserblogs to $BlogCNF['maxuserblogs'].
+V2.2 RC1 Sep.3   Add the postid parameter to blog,comment,trackback tables. Change the way of blog record point.
+V2.2 RC2 Sep.9   Bugfix for blog post and RSS URL.
+V2.2 RC3 Sep.9   Bugfix RC2.
+V2.2 RC4 Sep.10  Bugfix for convert TrackBack strings at popnupblog.php line 817.
+V2.2 RC5 Sep.15  Bugfix for trackback ping and receive.
+V2.21 Redwood1026 Security update for image file upload.
+V2.22 Redwood1106 Security update for SQL injection.
+V2.30 Redwood1204 Group Permission can be set as multiple with original groups. Bugfix for INVALID PARAM.
+V2.31 Redwood1206 Support SPAW editor.(Edit pop.ini.php) Bugfix for Anonymous permission.
+V2.32 Redwood1209 Security update for Script Insertion Vulnerability.
+V2.33 Redwood110 Another Bugfix for INVALID PARAM.
+V2.34 Redwood120 Add hiding log folder files.(.htaccess and index.html) Fix some sources for PHP5 error message. (Thx Hagane)
+V2.40 2006/03/13 Add a plugin CSV file to MySQL data transfer for mail posting.
+ Redwood 03/20 Using calender.php in xoops root languages folder.
+ Redwood 03/21 Add GroupSetByUser at preference in module admin.
+ Redwood 03/25 Fix for jump_url on popnupblog_list.html. Bugfix for search.inc.php. Fix for automatic BR tag problm with SPAW editor.
+V2.41 2006/04/09 Mailing list with thumbnail and more.(Hoshiyan hack merged)
+ Redwood 04/12 Add fsocketopen,fgets error output to deny log. more bug fix around pop.php.
+ Redwood 04/13 Cut ./log/index.html property check at admin/index.php.
+ Redwood 04/25 Add Polish language files by Maru.
+ Redwood 04/26 Fix about table width on popnupblog_application.html.
+ Redwood 04/27 Bugfix for post comment by anonymous. Change log file layout as maillog.cgi and popnupblog.log.
+V2.42 Redwood 05/22 Add deny words for Comment-SPAM as $BlogCNF['deny_words'] on pop.ini.php.
+V2.50 Redwood 05/24 Group post permission can be set as multiple with XOOPS groups.
+V2.51 Redwood 05/25 Bugfix around popnupblog_application table. (PLEASE change groupid to group_post as same as popnupblog_info table.)
+V2.52 Redwood 06/12 Record all mail log at maillog.cgi. Fix for blog information, it doesn't update when delete the blog.
+      Redwood 06/17 Bugfix for parse error at deny section on pop.ini.php.
+      Redwood 07/07 Bugfix for adding <div style='clear:both'> each time at preview with image file. Delete it at PopnupBlogUtils.php and move to popnupblog_view.html.
+      Redwood 08/20 Bugfix for group post permission.
+
+--------------------------------------------------------------------------------
+Version 1 Code Name - Beachwood Drive.
+--------------------------------------------------------------------------------
+v1.00 2004/05/02 Alpha release.
+v1.10 2004/05/04 Transform Hack to Module. Cause lots of change from original, And useful to non-Japanese user. Add email row in popnupblog_info on MySQL. If you installed original popnupblog already, Delete table and create it. or add email row vchar(60).
+v1.11 2004/05/07 Add guest post option ( Guest can post someone's uid ). Fix the error about file name when upper char.
+v1.12 2004/05/08 add popnup_eng.txt, popnup_jpn.txt, pop.ini.eng, pop.ini.jpn
+v1.13 2004/05/14 Fix the white-out problem when you ain't set the pop.ini.php. Add buffering process in download.php.
+v1.14 2004/05/20 Support GIF thumbsnail and Open as new window.
+v1.20 2004/05/29 The Time Has Come! You can blogging DATE and TIME. Change the SQL table, module name simpleblog to popnupblog.
+v1.21 2004/06/03 Fix a white-out problem of a filename. Add the notice to deny log (deny.cgi) and fix all about pop.php. Fix the mistake of trackback URL.
+v1.22 2004/06/07 Fix a serch problem about serch.inc.php.
+v1.23 2004/06/13 Fix a TrackBack list problem about popnupblog.php.
+v1.24 2004/06/14 More Simplify around the TrackBack.
+v1.25 2004/07/05 Add reconfirm for delete Blog in Admin menu.
+v1.26 2004/07/06 Add latest title in blog list.
+v1.27 2004/07/07 Modify the guest comment form.
+v1.28 2004/07/08 Add edit, delete functions to comment.
+v1.29 2004/07/09 Add delete button to edit blog.
+v1.30 2004/07/09 Add admin's override functions to edit blog and edit comment.
+v1.31 2004/07/10 Bugfix about Write Blog.
+v1.32 2004/07/10 Bugfix about Blog list Title. ( If Admin override someone blog, Latest title move to Admin's titles. )
+v1.33 2004/07/10 Add latest title to Recently Updated blog form.
+>>>>>>>>>>>>>>>> ( See Update v1.2x to v1.33 )
+v1.34 2004/07/26 The indication time is adjusted to client time zone. (Thanks Hoshiyan)
+v1.35 2004/07/28 Support send comment to blog owner.
+v1.36 2004/08/06 Bugfix about '1' message problem in case of post from mail. Omit the htaccess file.
+v1.37 2004/08/08 Support get uploadfile and embed to the text in preview. 
+v1.38 2004/08/10 Bugfix about blank blog problem in case of no support about mb function.
+v1.39 2004/08/18 Add Russian folder in language. ( I can't make sure about does it work. )
+v1.40 2004/08/20 Bugfix about upload error after v1.37.
+v1.41 2004/08/20 Bugfix about Russian language. (Thanks Oleg)
+v1.42 2004/08/31 Supporting post to blog from two mail addresses. (Thanks Hoshiyan)
+>>>>>>>>>>>>>>>> ( You must run v141to142.sql in sql folder) 
+v1.43 2004/09/01 Layout change at Blog view.
+v1.44 2004/09/09 Add French folder in language. (Thanks Outch)
+v1.45 2004/09/09 Add page control to the last line of blogs view.
+v1.46 2004/09/09 Add weekday and modify date strings.
+v1.47 2004/09/14 Bugfix about comment edit and delete problem. Update French message. (Thanks Outch)
+v1.48 2004/09/17 Group Blog has come!
+>>>>>>>>>>>>>>>> ( You must see Update v1.4x to v1.48 below )
+v1.49 2004/09/18 Bugfix for non-support about PHP mb-functions server.
+v1.50 2004/09/19 Bugfix about post from email after v1.48.
+v1.51 2004/09/22 Recently updated blog has new topic.
+v1.52 2004/09/26 Bugfix about strcut error. Image file display on recently updated blog.
+                 Suppot new topic too by email.
+                 Comment mail support convert to your local Language. ( Set $BlogCNF['save_as_mbstr'] on pop.ini.php )
+>>>>>>>>>>>>>>>> ( See Update v1.51 to v1.52 and DO NOT USE v1.51's pop.ini.php. _dir parameter changed. )
+v1.53 2004/10/28 Add RECANTLY_TXT_LIMIT to pop.ini.php. You can omit the reacent text when turn it off to 0.
+                 Add MAIL_TO_MBSTR to pop.ini.php. You can get a email with your local language.
+                 Bugfix. When an user delete a comment the system do'nt return at subjet where was this comment.
+                 Polish. When an user'blog (owner) delete the last post, system clear the reacently block.
+>>>ATTENTION >>> Recieve mail setup moved to preferences of Popnupblog in admin menu.
+Rev.a 2004/11/01 Bugfix about convert function.
+                 Fix message about after delete a comment.
+                 Add SAVE_TO_MYSQL parameter in pop.ini.php. This is convert strings mail to MySQL.
+V1.54 2004/11/04 Bugfix about disappearing of recently blog when someone writes comment.
+                 Change the formation about image first than message when blogger post a blog.
+                 Add spacing of image between messages.
+                 Update French messages by Outch.
+Rev.a 2004/11/05 Bugfix about comment. Add spacing of image for popnupblog_list.html.
+V1.55 2004/11/06 Approve thru and notice to email.
+                 Add new parameter to pop.ini.php. 
+                 $adminUid = 1;	// Notice to admin for request new blog. ( null = not notify )
+                 $admin_approve = 0; User get notiece mail about create new blog.
+                                  1; Admin get notiece mail about request new blog.
+Rev.a 2004/11/07 Add link to Preferences at module menu in system admin.
+Rev.b 2004/11/08 Bugfix about deferent time zone server between users.
+V1.56 2004/11/27 Free Language Setting Version. (Add get_mailcode.php)
+                 Bugfix about send commented mail to blog owner.
+                 Delete SAVE_TO_MYSQL parameter in pop.ini.php.
+                 Delete MAIL_TO_MBSTR parameter in pop.ini.php.
+                 Add Italian folder in language. (Thanks meta99.info)
+Rev.a 2004/11/28 Change how to send and recieve trackback ID ('?' to '/').

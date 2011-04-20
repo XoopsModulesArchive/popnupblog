@@ -1,0 +1,67 @@
+<{* $Id: popnupblog_list.html,v 1.2 2005/09/03 11:38:11 yoshis Exp $ *}>
+<h1><{$mod_name}></h1>
+<div id="pblog-wrapper">
+<div id="pblog-con">
+<!-- begin of popnup blog block -->
+<form method="post" action="index.php">
+	<{$_MD_POPNUPBLOG_CONTENTS_VIEW}>
+	<input type="radio" name="view" value="1" <{if $view eq 1 }>CHECKED<{/if}>><{$_MD_POPNUPBLOG_FORM_YES}></input>
+	<input type="radio" name="view" value="0" <{if $view eq 0 }>CHECKED<{/if}>><{$_MD_POPNUPBLOG_FORM_NO}></input>
+	&nbsp;
+	<{$_MD_POPNUPBLOG_CATEGORY}><{$categories}>
+	<input type="submit" value=<{$_MD_POPNUPBLOG_FILTERON}> name="filter" />
+</form>
+
+<form method="post" action="mlfunction.php">
+  
+    <!--
+    <{$_MD_POPNUPBLOG_LIST_TITLE}>
+    <{$_MD_POPNUPBLOG_TITLE}>
+    <{$_MD_POPNUPBLOG_LIST_CREATOR}>
+    <{$_MD_POPNUPBLOG_CATEGORY}>
+    <{$_MD_POPNUPBLOG_LIST_UPDATE_DATE}>
+    <{$_MD_POPNUPBLOG_ML_JOIN}>
+    -->
+  
+<{foreach item=blog_user from=$popnupblog}>
+  <div class="pblog-box-fff">
+  <dt>
+  	<a href='<{$blog_user.url}>'><{$blog_user.title}></a>&nbsp;<{$blog_user.catname}>&nbsp;
+  	<a href='<{$xoops_url}>/userinfo.php?uid=<{$blog_user.uid}>'><{$blog_user.uname}></a>
+  </dt>
+  
+  <div class="pblog-box-inner">
+    <{$blog_user.desc}>
+    <li><{$blog_user.last_title}>&nbsp;[<{$blog_user.last_update_m}>]</li>
+    <{if $blog_user.ml_function eq 1}>
+      <input type="hidden" name="blogid[]" value="<{$blog_user.bid}>" />
+      <input type="checkbox" name="mlset[]" value="<{$blog_user.bid}>" 
+      <{if $blog_user.ml_checked gt 0}>
+        checked
+      <{/if}>
+    <{/if}>
+    <{if $view eq 1 }>
+        <div class="pblog-thread-body">
+        <{$blog_user.last_text|replace:"<img":"<img hspace='5'"}>
+        </div>
+    <{/if}>
+   </div>
+ </div>
+<{/foreach}>
+<{$jump_url}><br />
+<{if $blog_user.ml_function eq 1}>
+  <input type="submit" value=<{$_MD_POPNUPBLOG_ML_UPDATE}> name="join" />
+<{/if}>
+<hr>
+<font size="-1">PopnupBlog <{$POPNUPBLOG_VERSION}> by 
+<a href="http://www.bluemooninc.biz/" target="_blank">Bluemoon inc.</a>
+<a href="http://feeds.archive.org/validator/check?url=<{$popnupblog_rss_url}>" target="_blank">
+<img src="<{$xoops_url}>/modules/popnupblog/rss-valid-line.gif" border="0"></a>
+<a href="<{$popnupblog_rss_url}>"><img src="<{$xoops_url}>/modules/popnupblog/rss10.gif" border="0" /></a>
+</font>
+</form>
+<{include file='db:system_notification_select.html'}>
+<{$popimg}>
+<!-- end of popnup blog block --> 
+</div>
+</div>
