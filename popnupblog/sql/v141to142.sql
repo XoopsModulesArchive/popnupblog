@@ -11,4 +11,4 @@ CREATE TABLE xoops_popnupblog_emailalias (
 	public tinyint(1) NOT NULL default '1',
 	email varchar(60) ,
 	PRIMARY KEY (uid)
-) TYPE=MyISAM;
+) ENGINE=MyISAM;

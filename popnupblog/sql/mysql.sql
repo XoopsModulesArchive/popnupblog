@@ -27,7 +27,7 @@ CREATE TABLE popnupblog_info (
 	pop_address varchar(60) default NULL,
 	default_status tinyint(1) NOT NULL default '1',
 	PRIMARY KEY (blogid)
-) TYPE=MyISAM;
+) ENGINE=MyISAM;
 
 -- blog data table
 -- uid :
@@ -54,7 +54,7 @@ CREATE TABLE popnupblog (
 	status tinyint(1) NOT NULL default '0',
 	PRIMARY KEY  (postid),
 	KEY blog_count ( `blogid` , `blog_count` )
-) TYPE=MyISAM;
+) ENGINE=MyISAM;
 
 
 -- blog comment table
@@ -83,7 +83,7 @@ CREATE TABLE popnupblog_comment (
 	status tinyint(1) NOT NULL default '0',
 	KEY (postid),
 	PRIMARY KEY (comment_id)
-) TYPE=MyISAM;
+) ENGINE=MyISAM;
 
 CREATE TABLE popnupblog_application (
 	uid int(5) unsigned NOT NULL,
@@ -129,12 +129,12 @@ CREATE TABLE popnupblog_emailalias (
 	email varchar(60) NOT NULL,
 	uid int(5) unsigned NOT NULL default '0',
 	PRIMARY KEY (blogid,public,email)
-) TYPE=MyISAM;
+) ENGINE=MyISAM;
 
 CREATE TABLE popnupblog_categories (
 	cat_id smallint(3) unsigned NOT NULL auto_increment,
 	cat_title varchar(100) NOT NULL default '',
 	cat_order varchar(10) default NULL,
 	PRIMARY KEY  (cat_id)
-) TYPE=MyISAM;
+) ENGINE=MyISAM;
 
