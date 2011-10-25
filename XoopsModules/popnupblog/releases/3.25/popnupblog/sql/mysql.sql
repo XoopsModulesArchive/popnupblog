@@ -99,7 +99,7 @@ CREATE TABLE popnupblog_application (
 	email varchar(60) ,
 	emailalias varchar(60) ,
 	PRIMARY KEY (uid)
-) TYPE = MyISAM;
+) ENGINE=MyISAM;
 
 -- tbid, excerpt added by kazy 2006.11.18
 CREATE TABLE popnupblog_trackback (
@@ -113,7 +113,7 @@ CREATE TABLE popnupblog_trackback (
 	excerpt text,
 	KEY(postid),
 	PRIMARY KEY (tbid)
-) TYPE = MyISAM;
+) ENGINE=MyISAM;
 
 -- moblog email alias table added by hoshiyan@hoshiba-farm.com 2004.8.3
 -- uid :
