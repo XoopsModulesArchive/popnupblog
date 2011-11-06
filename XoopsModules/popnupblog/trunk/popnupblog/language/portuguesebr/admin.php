@@ -1,5 +1,5 @@
 <?php
-// $Id: admin.php,v 1.1.1.1 2005/08/28 02:13:09 yoshis Exp $ 
+// $Id$ 
 // Tradução para pt-BR por Douglas Milani - dmilani@gmail.com
 define('_AM_PREFERENCES','Preferências');
 define('_AM_POPNUPBLOG_CREATE', 'Criar Novo Usuário do Blog');

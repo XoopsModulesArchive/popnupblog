@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.1.1.1 2005/08/28 02:13:09 yoshis Exp $ 
+// $Id$ 
 
 define('_MD_POPNUPBLOG_APPLICATION_APPLIED', 'Twoje zg³oszenie zosta³o przyjête');
 define('_MD_POPNUPBLOG_APPLICATION_BLOG_NAME', 'Formularz tworzenia bloga');

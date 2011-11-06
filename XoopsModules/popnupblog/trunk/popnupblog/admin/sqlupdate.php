@@ -1,5 +1,5 @@
 <?
-// $Id: sqlupdate.php,v 1.1 2005/09/03 11:38:11 yoshis Exp $
+// $Id$
 // Original Script by aotake , http://xoops.bmath.org/
 //
 include('../../../include/cp_header.php');

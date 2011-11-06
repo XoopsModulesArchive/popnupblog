@@ -1,5 +1,5 @@
 <?php
-// $Id: emailalias.php,v 3.1 2007/10/04 15:58:17 yoshis Exp $
+// $Id$
 //  ------------------------------------------------------------------------ //
 //             Copyright (c) 2005-2007 Yoshi.Sakai @ Bluemoon inc.           //
 //                       <http://www.bluemooninc.biz/>                       //

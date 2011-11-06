@@ -11,7 +11,7 @@
                          : It need to set the GD libraly option on PHP. (php.ini)
     Original source from : http://php.s3.to/ (Let's PHP!)
 
-    $Id: thumb.php,v 1.1.1.1 2005/08/28 02:13:08 yoshis Exp $
+    $Id$
 
  ***************************************************************************/
 

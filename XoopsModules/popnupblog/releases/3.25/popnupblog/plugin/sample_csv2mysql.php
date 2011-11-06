@@ -1,5 +1,5 @@
 <?PHP
-// $Id: csv2mysql.php,v 1.0.1 2006/05/29 19:52:03 yoshis Exp $
+// $Id$
 //  ------------------------------------------------------------------------ //
 //              CSV file to MySQL data transporter for PopnUpBlog            //
 //                Copyright (c) 2006 Yoshi Sakai @ Bluemoon inc.             //

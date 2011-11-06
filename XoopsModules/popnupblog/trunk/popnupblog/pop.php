@@ -1,5 +1,5 @@
 <?php
-// $Id: pop.php,v 3.00 2006/12/15 10:58:08 yoshis Exp $
+// $Id$
 //  ------------------------------------------------------------------------ //
 //                Copyright (c) 2005 Yoshi.Sakai @ Bluemoon inc.             //
 //                       <http://www.bluemooninc.biz/>                       //

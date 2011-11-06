@@ -1,5 +1,5 @@
 <?php
-// $Id: modinfo.php,v 1.1.1.1 2005/08/28 02:13:09 yoshis Exp $ 
+// $Id$ 
 define('_MI_POPNUPBLOG_APPL_DESC', 'ユーザからのブログ開設申請を受付けるかどうか');
 define('_MI_POPNUPBLOG_1_LINE', '最近更新されたブログ');
 define('_MI_POPNUPBLOG_CONF_DESC', '説明');

@@ -1,5 +1,5 @@
 <?php
-// $Id: trackback.php,v 1.4 2005/11/06 05:10:57 yoshis Exp $
+// $Id$
 
 include '../../mainfile.php';
 include_once XOOPS_ROOT_PATH.'/modules/popnupblog/popnupblog.php';

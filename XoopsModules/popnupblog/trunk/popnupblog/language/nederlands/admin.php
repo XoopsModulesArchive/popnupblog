@@ -1,5 +1,5 @@
 <?php
-// $Id: admin.php,v 3.0.1 2007/01/29 02:13:09 yoshis Exp $ 
+// $Id$ 
 // For Menu
 define('_AM_POPNUPBLOG_PERMITIONERR', 'niet beschrijfbaar');
 define('_AM_PREFERENCES','Voorkeuren');

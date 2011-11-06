@@ -1,6 +1,6 @@
 
 <?php
-// $Id: main.php,v 1.1.1.1 2005/08/28 02:13:09 yoshis Exp $ 
+// $Id$ 
 
 define('_MD_POPNUPBLOG_APPLICATION_APPLIED', 'Votre demande de blog a bien &eacute;t&eacute; enregistr&eacute;e');
 define('_MD_POPNUPBLOG_APPLICATION_BLOG_NAME', 'Formulaire de Cr&eacute;ation de blog');

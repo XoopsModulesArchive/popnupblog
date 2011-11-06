@@ -1,5 +1,5 @@
 <?php
-// $Id: mb_wordwrap.php,v 1.0.0 2006/05/03 17:33:00 yoshis Exp $
+// $Id$
 //  ------------------------------------------------------------------------ //
 //                    wordwrap for multi-byte strings                        //
 //             Copyright (c) 2005 Yoshi Sakai @ Bluemoon inc.                //

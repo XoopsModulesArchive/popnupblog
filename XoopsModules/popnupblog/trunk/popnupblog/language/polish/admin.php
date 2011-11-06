@@ -1,5 +1,5 @@
 <?php
-// $Id: admin.php,v 1.1.1.1 2005/08/28 02:13:09 yoshis Exp $ 
+// $Id$ 
 // For Menu
 define("_AM_POPNUPBLOG_PERMITIONERR", "nie ma praw zapisu");
 define("_AM_PREFERENCES","Preferencje");

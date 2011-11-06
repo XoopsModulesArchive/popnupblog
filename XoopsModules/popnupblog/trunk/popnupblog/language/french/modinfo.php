@@ -1,5 +1,5 @@
 <?php
-// $Id: modinfo.php,v 1.1.1.1 2005/08/28 02:13:09 yoshis Exp $ 
+// $Id$ 
 
 define('_MI_POPNUPBLOG_APPL_DESC', '');
 define('_MI_POPNUPBLOG_1_LINE', 'Blog R&eacute;cemment mis &agrave; jour');

@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.2 2005/09/03 11:38:11 yoshis Exp $ 
+// $Id$ 
 define('_MD_POPNUPBLOG_APPLICATION_APPLIED', '申請を受付けました。');
 define('_MD_POPNUPBLOG_APPLICATION_BLOG_NAME', 'ブログ作成申請フォーム');
 define('_MD_POPNUPBLOG_APPLICATION_BLOG_TITLE', 'ブログのタイトル');

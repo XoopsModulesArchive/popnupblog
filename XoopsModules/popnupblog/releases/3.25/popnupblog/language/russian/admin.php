@@ -1,5 +1,5 @@
 <?php
-// $Id: admin.php,v 1.1.1.1 2005/08/28 02:13:09 yoshis Exp $ 
+// $Id$ 
 
 define ('_AM_POPNUPBLOG_CREATE','Создать нового Blog пользователя');
 define ('_AM_POPNUPBLOG_EDIT','Редактировать');

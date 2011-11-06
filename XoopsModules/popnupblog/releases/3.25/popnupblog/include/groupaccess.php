@@ -1,5 +1,5 @@
 <?php 
-// $Id: groupaccess.php,v 1.8 2005/02/07 01:25:26 phppp Exp $
+// $Id$
 //  ------------------------------------------------------------------------ //
 //                        WFsections for XOOPS                               //
 //                 Copyright (c) 2004 WF-section Team                        //

@@ -1,5 +1,5 @@
 <?php
-// $Id: popnupblog.php,v 3.16 2007/11/09 16:36:56 yoshis Exp $
+// $Id$
 //  ------------------------------------------------------------------------ //
 //                Copyright (c) 2005 Yoshi.Sakai @ Bluemoon inc.             //
 //                       <http://www.bluemooninc.biz/>                       //

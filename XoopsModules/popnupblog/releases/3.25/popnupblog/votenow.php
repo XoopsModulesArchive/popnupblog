@@ -1,5 +1,5 @@
 <?php
-// $Id: votenow.php,v 3.16 2007/11/09 16:37:56 yoshis Exp $
+// $Id$
 require('header.php');
 	if(!xoops_refcheck()){
 		redirect_header(XOOPS_URL.'/modules/popnupblog/',2,'Referer Check Failed');

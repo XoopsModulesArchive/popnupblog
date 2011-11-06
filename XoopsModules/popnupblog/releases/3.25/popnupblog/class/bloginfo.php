@@ -1,5 +1,5 @@
 <?php
-// $Id: bloginfo.php,v 3.03 2007/02/09 14:19:56 yoshis Exp $
+// $Id$
 //  ------------------------------------------------------------------------ //
 //                Copyright (c) 2005 Yoshi.Sakai @ Bluemoon inc.             //
 //                       <http://www.bluemooninc.biz/>                       //

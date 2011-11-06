@@ -1,5 +1,5 @@
 <?php
-// $Id: notification.inc.php,v 1.1.1.1 2005/08/28 02:13:08 yoshis Exp $
+// $Id$
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //

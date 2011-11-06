@@ -1,5 +1,5 @@
 <?php
-// $Id: mbstrings.php,v 3.00 2006/12/15 11:01:56 yoshis Exp $
+// $Id$
 //  ------------------------------------------------------------------------ //
 //                Copyright (c) 2005 Yoshi.Sakai @ Bluemoon inc.             //
 //                       <http://www.bluemooninc.biz/>                       //

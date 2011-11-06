@@ -1,5 +1,5 @@
 <?php
-// $Id: download.php,v 3.21 2009/03/02 14:16:36 yoshis Exp $
+// $Id$
 //  ------------------------------------------------------------------------ //
 //                  Copyright (c) Yoshi.Sakai @ Bluemoon inc.                //
 //                       <http://www.bluemooninc.biz/>                       //

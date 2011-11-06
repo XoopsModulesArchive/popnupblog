@@ -1,5 +1,5 @@
 <?php
-// $Id: sendmail.php,v 3.0.5 2007/08/30 22:45:08 yoshis Exp $
+// $Id$
 //  ------------------------------------------------------------------------ //
 //                Copyright (c) 2005 Yoshi.Sakai @ Bluemoon inc.             //
 //                       <http://www.bluemooninc.biz/>                       //

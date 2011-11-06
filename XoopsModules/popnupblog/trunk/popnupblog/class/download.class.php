@@ -8,7 +8,7 @@
     auther               : Yoshi Sakai
     email                : webmaster@bluemooninc.biz
 
-    $Id: download.class.php,v 1.00 2007/06/30 11:35:36 yoshis Exp $
+    $Id$
 
  ***************************************************************************/
 

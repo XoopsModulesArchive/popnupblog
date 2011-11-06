@@ -1,6 +1,6 @@
 
 <?php
-// $Id: main.php,v 1.1.1.1 2005/08/28 02:13:09 yoshis Exp $ 
+// $Id$ 
 
 define ('_MD_POPNUPBLOG_APPLICATION_APPLIED','Ваше приложение принято');
 define ('_MD_POPNUPBLOG_APPLICATION_BLOG_TITLE','Заголовок Blog');

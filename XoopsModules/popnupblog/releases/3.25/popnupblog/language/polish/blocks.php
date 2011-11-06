@@ -1,5 +1,5 @@
 <?php
-// $Id: blocks.php,v 1.1.1.1 2005/08/28 02:13:09 yoshis Exp $ 
+// $Id$ 
 
 define('_MB_POPNUPBLOG_BLOGGER_NAME', 'Autor');
 define('_MB_POPNUPBLOG_NEW_APPLICATION', 'Nowe zg³oszenie');
