@@ -1,5 +1,5 @@
 <?php
-// $Id: application.php,v 2.51 2006/05/25 19:13:08 yoshis Exp $
+// $Id$
 require('header.php');
 //global $xoopsConfigUser;	
 	if(!$xoopsUser){

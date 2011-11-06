@@ -1,5 +1,5 @@
 <?php
-// $Id: commentedit.php,v 3.16 2007/11/09 16:34:56 yoshis Exp $
+// $Id$
 require('header.php');
 include_once XOOPS_ROOT_PATH."/include/xoopscodes.php";
 include_once('./class/comment.php');

@@ -1,5 +1,5 @@
 <?php
-// $Id: search.inc.php,v 1.4 2007/10/03 12:20:08 yoshis Exp $
+// $Id$
 if(!defined('XOOPS_ROOT_PATH')){
 	exit();
 }

@@ -1,5 +1,5 @@
 <?php
-// $Id: sanitize.php,v 2.52 2006/06/09 22:29:08 yoshis Exp $
+// $Id$
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //

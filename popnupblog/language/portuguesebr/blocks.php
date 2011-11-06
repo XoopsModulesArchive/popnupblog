@@ -1,5 +1,5 @@
 <?php
-// $Id: blocks.php,v 1.1.1.1 2005/08/28 02:13:09 yoshis Exp $ 
+// $Id$ 
 // Tradução para pt-BR por Douglas Milani - dmilani@gmail.com
 
 define('_MB_POPNUPBLOG_BLOGGER_NAME', 'Blogger');

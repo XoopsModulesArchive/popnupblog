@@ -1,5 +1,5 @@
 <?php
-// $Id: mlfunction.php,v 1.0 2006/11/17 12:09:56 yoshis Exp $
+// $Id$
 /*
 ** Copyright (C) 2006  Yoshi Sakai - http://www.bluemooninc.biz/
 ** This program is distributed under the terms and conditions of the GPL

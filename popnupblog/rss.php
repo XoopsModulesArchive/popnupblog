@@ -1,5 +1,5 @@
 <?php
-// $Id: rss.php,v 3.16 2007/11/09 16:36:10 yoshis Exp $
+// $Id$
 
 include '../../mainfile.php';
 if(

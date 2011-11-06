@@ -1,5 +1,5 @@
 <?php
-// $Id: create.php,v 3.0 2005/12/01 13:16:08 yoshis Exp $
+// $Id$
 //  ------------------------------------------------------------------------ //
 //                Copyright (c) 2005 Yoshi.Sakai @ Bluemoon inc.             //
 //                       <http://www.bluemooninc.biz/>                       //

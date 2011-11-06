@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.1.1.1 2005/08/28 02:13:09 yoshis Exp $ 
+// $Id$ 
 // Tradução para pt-BR por Douglas Milani - dmilani@gmail.com
 define('_MD_POPNUPBLOG_APPLICATION_APPLIED', 'Recebemos sua solicitação');
 define('_MD_POPNUPBLOG_APPLICATION_BLOG_NAME', 'Formulário para criação de blog');
