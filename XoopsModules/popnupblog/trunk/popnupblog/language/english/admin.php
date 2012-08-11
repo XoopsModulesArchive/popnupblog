@@ -1,35 +1,35 @@
 <?php
 // $Id$ 
 // For Menu
-define("_AM_POPNUPBLOG_PERMITIONERR", "not writable");
+define("_AM_POPNUPBLOG_PERMITIONERR","not writable");
 define("_AM_PREFERENCES","Preferences");
 define("_AM_POPNUPBLOG_GOMOD","Go to Module");
 define("_AM_POPNUPBLOG_SUPPORTSITE","Support Site");
 
 // Main
-define("_AM_POPNUPBLOG_CREATE", "Create New Blog User");
-define("_AM_POPNUPBLOG_EDIT", "Edit");
-define("_AM_POPNUPBLOG_OPERATION", "OPERATION");
-define("_AM_POPNUPBLOG_APPLICATED_USER", "blog applicant");
-define("_AM_POPNUPBLOG_BLOG_TITLE", "BLOG Title");
-define("_AM_POPNUPBLOG_REJECT_APPLICATION", "rejection");
-define("_AM_POPNUPBLOG_USER_LIST", "User List");
-define("_AM_POPNUPBLOG_LASTUPDATE", "Last Update");
-define("_AM_POPNUPBLOG_BLOG_EMAIL", "Post Mail Address");
-define("_AM_POPNUPBLOG_SEND_EMAIL", "Send Mail Address");
-define("_AM_POPNUPBLOG_ALLOW_APPLICATION", "allowing");
-define("_AM_POPNUPBLOG_NEW_VERSION", "New version is released!");
-define("_AM_POPNUPBLOG_NAME", "Name");
-define("_AM_POPNUPBLOG_PERMISSION", "Group Permission");
-define("_AM_VOTE", "Vote");
-define("_AM_COMMENT", "Comment");
-define("_AM_READ", "Read");
-define("_AM_POPNUPBLOG_POST", "Post");
-define("_AM_POPNUPBLOG_UID", "uid");
-define("_AM_POPNUPBLOG_UNAME", "User Name");
-define("_AM_POPNUPBLOG_GROUPID", "BLOG Group");
-define("_AM_POPNUPBLOG_CANTADDEMAIL", "The email has already been registered!");
-define('_AM_POPNUPBLOG_PLUGIN', 'Plugin:');
+define("_AM_POPNUPBLOG_CREATE","Create New Blog User");
+define("_AM_POPNUPBLOG_EDIT","Edit");
+define("_AM_POPNUPBLOG_OPERATION","OPERATION");
+define("_AM_POPNUPBLOG_APPLICATED_USER","blog applicant");
+define("_AM_POPNUPBLOG_BLOG_TITLE","BLOG Title");
+define("_AM_POPNUPBLOG_REJECT_APPLICATION","rejection");
+define("_AM_POPNUPBLOG_USER_LIST","User List");
+define("_AM_POPNUPBLOG_LASTUPDATE","Last Update");
+define("_AM_POPNUPBLOG_BLOG_EMAIL","Post Mail Address");
+define("_AM_POPNUPBLOG_SEND_EMAIL","Send Mail Address");
+define("_AM_POPNUPBLOG_ALLOW_APPLICATION","allowing");
+define("_AM_POPNUPBLOG_NEW_VERSION","New version is released!");
+define("_AM_POPNUPBLOG_NAME","Name");
+define("_AM_POPNUPBLOG_PERMISSION","Group Permission");
+define("_AM_VOTE","Vote");
+define("_AM_COMMENT","Comment");
+define("_AM_READ","Read");
+define("_AM_POPNUPBLOG_POST","Post");
+define("_AM_POPNUPBLOG_UID","uid");
+define("_AM_POPNUPBLOG_UNAME","User Name");
+define("_AM_POPNUPBLOG_GROUPID","BLOG Group");
+define("_AM_POPNUPBLOG_CANTADDEMAIL","The email has already been registered!");
+define('_AM_POPNUPBLOG_PLUGIN','Plugin:');
 //%%%%%%	Ported from newbb admin %%%%%
 define("_AM_ADMIN","Administrators");
 define("_AM_PRIVATE","Private(Admin)");
@@ -73,8 +73,8 @@ define("_AM_CLEAR","Clear");
 define("_AM_SAVECHANGES","Save Changes");
 define("_AM_CATEGORYDELETED","Category deleted.");
 // After V3.0
-define('_AM_POPNUPBLOG_MAILPRIFIX_DESC', 'Add \'b%s,\' in the top of subject as prefix check.');
-define('_AM_POPNUPBLOG_ML_DESC', '(No necessary to adding a prefix to the mailing list address)');
+define('_AM_POPNUPBLOG_MAILPRIFIX_DESC','Add \'b%s,\' in the top of subject as prefix check.');
+define('_AM_POPNUPBLOG_ML_DESC','(No necessary to adding a prefix to the mailing list address)');
 define('_AM_AUTOAPPROVE','Auto approve posting without admin intervention?');
 define('_AM_WAITING','Waiting posts.');
 define('_AM_LINK2WAITING','Edit a waiting post.');
@@ -84,14 +84,14 @@ define('_AM_TITLE','Title');
 define('_AM_POSTED','Post date');
 define('_AM_POSTER','Submitter');
 define('_AM_ACTION','Action');
-define('_AM_DELETECOMMENT', 'Delete okay');
+define('_AM_DELETECOMMENT','Delete okay');
 define('_AM_TRACKBACKS','Trackbacks');
 define('_AM_LINK2TRACKBACKS','Management of trackbacks');
 
-define('_AM_POPNUPBLOG_MLFUNCTION', 'Mailing List');
-define('_AM_POPNUPBLOG_ACTIVATE', 'Activate');
-define('_AM_POPNUPBLOG_POPSERVER', 'POP Server');
-define('_AM_POPNUPBLOG_POPUSER', 'POP User');
-define('_AM_POPNUPBLOG_POPPASSWORD', 'POP Password');
-define('_AM_POPNUPBLOG_POPADDRESS', 'POP mail address');
+define('_AM_POPNUPBLOG_MLFUNCTION','Mailing List');
+define('_AM_POPNUPBLOG_ACTIVATE','Activate');
+define('_AM_POPNUPBLOG_POPSERVER','POP Server');
+define('_AM_POPNUPBLOG_POPUSER','POP User');
+define('_AM_POPNUPBLOG_POPPASSWORD','POP Password');
+define('_AM_POPNUPBLOG_POPADDRESS','POP mail address');
 ?>

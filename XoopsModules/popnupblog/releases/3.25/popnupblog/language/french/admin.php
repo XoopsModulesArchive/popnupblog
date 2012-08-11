@@ -1,34 +1,34 @@
 <?php
 // $Id$ 
 // For Menu
-define("_AM_POPNUPBLOG_PERMITIONERR", "non ouvert en écriture");
-define("_AM_PREFERENCES","Préférences");
+define("_AM_POPNUPBLOG_PERMITIONERR","non ouvert en Ã©criture");
+define("_AM_PREFERENCES","PrÃ©fÃ©rences");
 define("_AM_POPNUPBLOG_GOMOD","Aller au Module");
 define("_AM_POPNUPBLOG_SUPPORTSITE","Site de Support");
 
 // Main
-define('_AM_POPNUPBLOG_CREATE', 'Cr&eacute;er un nouvel utilisateur du Blog');
-define('_AM_POPNUPBLOG_EDIT', 'Editer');
-define('_AM_POPNUPBLOG_OPERATION', 'OPERATION');
-define('_AM_POPNUPBLOG_APPLICATED_USER', 'blog de r&eacute;f&eacute;rence');
-define('_AM_POPNUPBLOG_BLOG_TITLE', 'Titre du BLOG');
-define('_AM_POPNUPBLOG_REJECT_APPLICATION', 'rejet');
-define('_AM_POPNUPBLOG_USER_LIST', 'Liste des Utilisateurs');
-define('_AM_POPNUPBLOG_PERMISSION', 'Autorisations');
-define('_AM_POPNUPBLOG_LASTUPDATE', 'Derni&egrave;re Mise &agrave; jour');
-define('_AM_POPNUPBLOG_BLOG_EMAIL', 'Adresse Email de Post');	//add Yoshi.S
-define('_AM_POPNUPBLOG_SEND_EMAIL', 'Envoyer &agrave; l\'adresse email');
-define('_AM_POPNUPBLOG_ALLOW_APPLICATION', 'Autoris&eacute;e');
-define('_AM_POPNUPBLOG_NEW_VERSION', 'Une nouvelle version est disponible!');
-define('_AM_POPNUPBLOG_NAME', 'Nom');
-define('_AM_VOTE', 'Vote');
-define('_AM_COMMENT', 'Commentaire');
-define('_AM_READ', 'Lecture');
-define('_AM_POPNUPBLOG_UID', 'N°');
-define('_AM_POPNUPBLOG_UNAME', 'Nom d\'utilisateur');
-define('_AM_POPNUPBLOG_GROUP', 'Groupe:');
-define('_AM_POPNUPBLOG_GROUPID', 'Groupe de Blog');
-define('_AM_POPNUPBLOG_CANTADDEMAIL', 'Cette adresse email a d&eacute;j&agrave; &eacute;t&eacute; enregistr&eacute;e!');
+define('_AM_POPNUPBLOG_CREATE','Cr&eacute;er un nouvel utilisateur du Blog');
+define('_AM_POPNUPBLOG_EDIT','Editer');
+define('_AM_POPNUPBLOG_OPERATION','OPERATION');
+define('_AM_POPNUPBLOG_APPLICATED_USER','blog de r&eacute;f&eacute;rence');
+define('_AM_POPNUPBLOG_BLOG_TITLE','Titre du BLOG');
+define('_AM_POPNUPBLOG_REJECT_APPLICATION','rejet');
+define('_AM_POPNUPBLOG_USER_LIST','Liste des Utilisateurs');
+define('_AM_POPNUPBLOG_PERMISSION','Autorisations');
+define('_AM_POPNUPBLOG_LASTUPDATE','Derni&egrave;re Mise &agrave; jour');
+define('_AM_POPNUPBLOG_BLOG_EMAIL','Adresse Email de Post');	//add Yoshi.S
+define('_AM_POPNUPBLOG_SEND_EMAIL','Envoyer &agrave; l\'adresse email');
+define('_AM_POPNUPBLOG_ALLOW_APPLICATION','Autoris&eacute;e');
+define('_AM_POPNUPBLOG_NEW_VERSION','Une nouvelle version est disponible!');
+define('_AM_POPNUPBLOG_NAME','Nom');
+define('_AM_VOTE','Vote');
+define('_AM_COMMENT','Commentaire');
+define('_AM_READ','Lecture');
+define('_AM_POPNUPBLOG_UID','NÂ°');
+define('_AM_POPNUPBLOG_UNAME','Nom d\'utilisateur');
+define('_AM_POPNUPBLOG_GROUP','Groupe:');
+define('_AM_POPNUPBLOG_GROUPID','Groupe de Blog');
+define('_AM_POPNUPBLOG_CANTADDEMAIL','Cette adresse email a d&eacute;j&agrave; &eacute;t&eacute; enregistr&eacute;e!');
 //%%%%%%	Ported from newbb admin %%%%%
 define('_AM_ADMIN','Administrateurs');
 define('_AM_PRIVATE','Priv&eacute; (Admin)');
@@ -63,7 +63,7 @@ define('_AM_TCIATHU','c\'est d&eacute;j&agrave; la cat&eacute;gorie la plus haut
 define('_AM_CATEGORYMOVEDOWN','Cat&eacute;gorie d&eacute;plac&eacute;e vers le bas');
 define('_AM_TCIATLD','c\'est d&eacute;j&agrave; le cat&eacute;gorie la plus basse.');
 define('_AM_SETCATEGORYORDER','Param&egrave;tres de l\'ordre des cat&eacute;gories');
-define('_AM_TODHITOTCWDOTIP','L\'ordre montr&eacute; ici est l\'ordre des cat&eacutegorie qui sera affich&eacute; sur la page index. pour déplacer l\'ordre d\'une cat&eacute;gorie cliquer sur monter pour monter d\'un niveau et sur descendre pour baisser d\'un niveau.');
+define('_AM_TODHITOTCWDOTIP','L\'ordre montr&eacute; ici est l\'ordre des cat&eacutegorie qui sera affich&eacute; sur la page index. pour dÃ©placer l\'ordre d\'une cat&eacute;gorie cliquer sur monter pour monter d\'un niveau et sur descendre pour baisser d\'un niveau.');
 define('_AM_ECWMTCPUODITO','chaque clic d&eacute;placera la cat&eacute;gorie d\'une place en haut ou en bas.');
 define('_AM_CATEGORY1','Cat&eacute;gorie');
 define('_AM_MOVEUP','Monter');

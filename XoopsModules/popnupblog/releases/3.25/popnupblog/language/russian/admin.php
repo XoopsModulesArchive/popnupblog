@@ -14,12 +14,12 @@ define('_AM_POPNUPBLOG_BLOG_EMAIL','Îòïðàâèòü ïî e-mail');
 define('_AM_POPNUPBLOG_ALLOW_APPLICATION','Ðàçðåøèòü');
 define('_AM_POPNUPBLOG_NEW_VERSION','Íîâàÿ âåðñèÿ âûïóùåíà');
 define('_AM_POPNUPBLOG_NAME','Èìÿ');
-define('_AM_VOTE', 'Vote');
-define('_AM_COMMENT', 'Comment');
-define('_AM_READ', 'Read');
+define('_AM_VOTE','Vote');
+define('_AM_COMMENT','Comment');
+define('_AM_READ','Read');
 define('_AM_POPNUPBLOG_UID','uid');
-define('_AM_POPNUPBLOG_GROUP', 'Group: ');
-define('_AM_POPNUPBLOG_GROUPID', 'BLOG Group');
+define('_AM_POPNUPBLOG_GROUP','Group: ');
+define('_AM_POPNUPBLOG_GROUPID','BLOG Group');
 //%%%%%%	Ported from newbb admin %%%%%
 define('_AM_ADMIN','Administrators');
 define('_AM_MODERATOR','Moderator(s):');

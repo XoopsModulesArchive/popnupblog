@@ -1,16 +1,16 @@
 <?php
 // $Id$ 
-define('_MB_POPNUPBLOG_BLOGGER_NAME', 'ºîÀ®¼Ô');
-define('_MB_POPNUPBLOG_NEW_APPLICATION', '¿·µ¬¿½ÀÁ');
-define('_MB_POPNUPBLOG_YES', '¤Ï¤¤');
-define('_MB_POPNUPBLOG_SHOW_RSS_LINK', 'RSS¤Ø¤Î¥ê¥ó¥¯¤òÉ½¼¨');
-define('_MB_POPNUPBLOG_SHOW_LASTCOUNT', '²¿·ï¤Þ¤ÇÉ½¼¨');
-define('_MB_POPNUPBLOG_SHOW_LASTDAYS', '²¿ÆüÁ°¤Þ¤ÇÉ½¼¨');
-define('_MB_POPNUPBLOG_NO', '¤¤¤¤¤¨');
-define('_MB_POPNUPBLOG_BLOG_TITLE', '¥Ö¥í¥°Ì¾');
-define('_MB_POPNUPBLOG_UPDATE_DATE', '¹¹¿·Æü');
-define('_MB_POPNUPBLOG_TITLE', 'ºÇ¿·¥È¥Ô¥Ã¥¯');
-define("_MB_POPNUPBLOG_VSTBLGS","¥Ö¥í¥°¤Ø");
-define('_MB_POPNUPBLOG_TITLE_PREFIX', '');
-define('_MB_POPNUPBLOG_TITLE_SUFFIX', '¤µ¤ó¤Î¥Ö¥í¥°');
+define('_MB_POPNUPBLOG_BLOGGER_NAME','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½');
+define('_MB_POPNUPBLOG_NEW_APPLICATION','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½');
+define('_MB_POPNUPBLOG_YES','ï¿½Ï¤ï¿½');
+define('_MB_POPNUPBLOG_SHOW_RSS_LINK','RSSï¿½Ø¤Î¥ï¿½ó¥¯¤ï¿½É½ï¿½ï¿½');
+define('_MB_POPNUPBLOG_SHOW_LASTCOUNT','ï¿½ï¿½ï¿½ï¿½Þ¤ï¿½É½ï¿½ï¿½');
+define('_MB_POPNUPBLOG_SHOW_LASTDAYS','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ¤ï¿½É½ï¿½ï¿½');
+define('_MB_POPNUPBLOG_NO','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½');
+define('_MB_POPNUPBLOG_BLOG_TITLE','ï¿½Ö¥ï¿½ï¿½Ì¾');
+define('_MB_POPNUPBLOG_UPDATE_DATE','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½');
+define('_MB_POPNUPBLOG_TITLE','ï¿½Ç¿ï¿½ï¿½È¥Ô¥Ã¥ï¿½');
+define("_MB_POPNUPBLOG_VSTBLGS","ï¿½Ö¥ï¿½ï¿½ï¿½ï¿½");
+define('_MB_POPNUPBLOG_TITLE_PREFIX','');
+define('_MB_POPNUPBLOG_TITLE_SUFFIX','ï¿½ï¿½ï¿½ï¿½Î¥Ö¥ï¿½ï¿½');
 ?>
