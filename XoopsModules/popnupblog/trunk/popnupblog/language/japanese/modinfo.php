@@ -1,96 +1,96 @@
 <?php
 // $Id$ 
-define('_MI_POPNUPBLOG_APPL_DESC', '¥æ¡¼¥¶¤«¤é¤Î¥Ö¥í¥°³«Àß¿½ÀÁ¤ò¼õÉÕ¤±¤ë¤«¤É¤¦¤«');
-define('_MI_POPNUPBLOG_1_LINE', 'ºÇ¶á¹¹¿·¤µ¤ì¤¿¥Ö¥í¥°');
-define('_MI_POPNUPBLOG_CONF_DESC', 'ÀâÌÀ');
-define('_MI_POPNUPBLOG_TRACKBACK', '¥È¥é¥Ã¥¯¥Ð¥Ã¥¯');
-define('_MI_POPNUPBLOG_REWRITE_TITLE', 'Apache rewrite engine¤ò»ÈÍÑ¤¹¤ë');
-define('_MI_POPNUPBLOG_NAME', 'PopnUp¥Ö¥í¥°');
-define('_MI_POPNUPBLOG_DESC', 'POP¥á¡¼¥ë¥µ¡¼¥Ð¤«¤éUP¤Ç¤­¤ë¥Ö¥í¥°¤Ç¤¹');
-define('_MI_POPNUPBLOG_UNUSE_UPDATE_PING', '¹¹¿·Ping¤òÉÔ»ÈÍÑ');
-define('_MI_POPNUPBLOG_UNUSE_TRACKBACK', '¥È¥é¥Ã¥¯¥Ð¥Ã¥¯ÉÔ»ÈÍÑ');
-define('_MI_POPNUPBLOG_APPL_WAITING_TITLE', 'Popnup¥Ö¥í¥°¾µÇ§ÂÔ¤Á');
-define('_MI_POPNUPBLOG_NAME_BIG_BLOCK', 'Popnup¥Ö¥í¥°');
-define('_MI_POPNUPBLOG_USE_REWRITE', 'Rewrite»ÈÍÑ');
-define('_MI_POPNUPBLOG_UPDATE_PING', '¹¹¿·Ping¤òÍøÍÑ');
-define('_MI_POPNUPBLOG_1_LINE_DESC', 'ºÇ¿·¥ê¥¹¥È¤Î1¹ÔÉ½¼¨¥Ö¥í¥Ã¥¯');
-define('_MI_POPNUPBLOG_REWRITE_DESC', 'Rewrite¤ò»ÈÍÑ¤¹¤ë¤È /modules/popnupblog/view/index.php?uid=1 =&gt; /modules/popnupblog/view/1.html ¤Ë¤Ê¤ê¤Þ¤¹¡£(¥¨¥­¥¹¥Ñ¡¼¥ÈÍÑ)');
-define('_MI_POPNUPBLOG_APPL_WAITING', '¾µÇ§ÂÔ¤Á');
-define('_MI_POPNUPBLOG_UPDATE_PING_DESC', '¹¹¿·Ping¤òÍøÍÑ');
-define('_MI_POPNUPBLOG_WRITE','¥Ö¥í¥°¤ò½ñ¤¯');
-define('_MI_POPNUPBLOG_PREFERENCE', 'ÀßÄê');
-define('_MI_POPNUPBLOG_APPLY', '¿½ÀÁ');
-define('_MI_POPNUPBLOG_TRACKBACK_DESC', '¥È¥é¥Ã¥¯¥Ð¥Ã¥¯¤ò»ÈÍÑ¤¹¤ë¤«');
-define('_MI_POPNUPBLOG_UNUSE_REWRITE', 'RewriteÉÔ»ÈÍÑ');
-define('_MI_POPNUPBLOG_APPL_DENY', '¿½ÀÁÉÔ²ÄÇ½');
-define('_MI_POPNUPBLOG_CONFIG_RSS_DEF', '¥æ¡¼¥¶¤¬¼«Í³¤Ë½ñ¤±¤ëPopnup¤Ê¥Ö¥í¥°');
-define('_MI_POPNUPBLOG_USE_TRACKBACK', '¥È¥é¥Ã¥¯¥Ð¥Ã¥¯»ÈÍÑ');
-define('_MI_POPNUPBLOG_APPL_ALLOW', '¿½ÀÁ²ÄÇ½');
-define('_MI_POPNUPBLOG_APPL_OK', '¥æ¡¼¥¶¿½ÀÁ¤¢¤ê¡¦¤Ê¤·');
-define('_MI_POPNUPBLOG_USE_UPDATE_PING', '¹¹¿·Ping¤ò»ÈÍÑ');
-define('_MI_POPNUPBLOG_CONFIG_RSS_DESC', 'RSS¤Ç¸ø³«¤µ¤ì¤ëPopnup¥Ö¥í¥°¤ÎÀâÌÀ¤Ç¤¹');
+define('_MI_POPNUPBLOG_APPL_DESC', 'ï¿½æ¡¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¥Ö¥ï¿½ï¿½ï¿½ï¿½ï¿½ß¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¤ï¿½ï¿½ë¤«ï¿½É¤ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_1_LINE', 'ï¿½Ç¶á¹¹ï¿½ï¿½ï¿½ï¿½ï¿½ì¤¿ï¿½Ö¥ï¿½ï¿½');
+define('_MI_POPNUPBLOG_CONF_DESC', 'ï¿½ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_TRACKBACK', 'ï¿½È¥ï¿½Ã¥ï¿½ï¿½Ð¥Ã¥ï¿½');
+define('_MI_POPNUPBLOG_REWRITE_TITLE', 'Apache rewrite engineï¿½ï¿½ï¿½ï¿½Ñ¤ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_NAME', 'PopnUpï¿½Ö¥ï¿½ï¿½');
+define('_MI_POPNUPBLOG_DESC', 'POPï¿½á¡¼ï¿½ë¥µï¿½ï¿½ï¿½Ð¤ï¿½ï¿½ï¿½UPï¿½Ç¤ï¿½ï¿½ï¿½Ö¥ï¿½ï¿½ï¿½Ç¤ï¿½');
+define('_MI_POPNUPBLOG_UNUSE_UPDATE_PING', 'ï¿½ï¿½ï¿½ï¿½Pingï¿½ï¿½ï¿½Ô»ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_UNUSE_TRACKBACK', 'ï¿½È¥ï¿½Ã¥ï¿½ï¿½Ð¥Ã¥ï¿½ï¿½Ô»ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_APPL_WAITING_TITLE', 'Popnupï¿½Ö¥ï¿½ï¿½ï¿½ï¿½Ç§ï¿½Ô¤ï¿½');
+define('_MI_POPNUPBLOG_NAME_BIG_BLOCK', 'Popnupï¿½Ö¥ï¿½ï¿½');
+define('_MI_POPNUPBLOG_USE_REWRITE', 'Rewriteï¿½ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_UPDATE_PING', 'ï¿½ï¿½ï¿½ï¿½Pingï¿½ï¿½ï¿½ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_1_LINE_DESC', 'ï¿½Ç¿ï¿½ï¿½ê¥¹ï¿½È¤ï¿½1ï¿½ï¿½É½ï¿½ï¿½ï¿½Ö¥ï¿½Ã¥ï¿½');
+define('_MI_POPNUPBLOG_REWRITE_DESC', 'Rewriteï¿½ï¿½ï¿½ï¿½Ñ¤ï¿½ï¿½ï¿½ï¿½ /modules/popnupblog/view/index.php?uid=1 =&gt; /modules/popnupblog/view/1.html ï¿½Ë¤Ê¤ï¿½Þ¤ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½)');
+define('_MI_POPNUPBLOG_APPL_WAITING', 'ï¿½ï¿½Ç§ï¿½Ô¤ï¿½');
+define('_MI_POPNUPBLOG_UPDATE_PING_DESC', 'ï¿½ï¿½ï¿½ï¿½Pingï¿½ï¿½ï¿½ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_WRITE','ï¿½Ö¥ï¿½ï¿½ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_PREFERENCE', 'ï¿½ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_APPLY', 'ï¿½ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_TRACKBACK_DESC', 'ï¿½È¥ï¿½Ã¥ï¿½ï¿½Ð¥Ã¥ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¤ï¿½ï¿½ë¤«');
+define('_MI_POPNUPBLOG_UNUSE_REWRITE', 'Rewriteï¿½Ô»ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_APPL_DENY', 'ï¿½ï¿½ï¿½ï¿½ï¿½Ô²ï¿½Ç½');
+define('_MI_POPNUPBLOG_CONFIG_RSS_DEF', 'ï¿½æ¡¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í³ï¿½Ë½ñ¤±¤ï¿½Popnupï¿½Ê¥Ö¥ï¿½ï¿½');
+define('_MI_POPNUPBLOG_USE_TRACKBACK', 'ï¿½È¥ï¿½Ã¥ï¿½ï¿½Ð¥Ã¥ï¿½ï¿½ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_APPL_ALLOW', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç½');
+define('_MI_POPNUPBLOG_APPL_OK', 'ï¿½æ¡¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê¡¦ï¿½Ê¤ï¿½');
+define('_MI_POPNUPBLOG_USE_UPDATE_PING', 'ï¿½ï¿½ï¿½ï¿½Pingï¿½ï¿½ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_CONFIG_RSS_DESC', 'RSSï¿½Ç¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Popnupï¿½Ö¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¤ï¿½');
 // Add 2006.02.02 by yoshis
-define('_MI_POPNUPBLOG_FILECHRSET', 'ÅºÉÕ¥Õ¥¡¥¤¥ëÌ¾¾Î¥³¡¼¥É');
-define('_MI_POPNUPBLOG_FILECHRSET_DESC', '¥µ¡¼¥ÐÊÝÂ¸»þ¤Î¥Õ¥¡¥¤¥ëÌ¾¤Ë»È¤¦Ê¸»ú¥³¡¼¥É¤òÀßÄê¤·¤Þ¤¹(SJIS,UTF-8,EUC-JPÅù)');
+define('_MI_POPNUPBLOG_FILECHRSET', 'Åºï¿½Õ¥Õ¥ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½Î¥ï¿½ï¿½ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_FILECHRSET_DESC', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¸ï¿½ï¿½ï¿½Î¥Õ¥ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½Ë»È¤ï¿½Ê¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¤ï¿½ï¿½ï¿½ï¿½ê¤·ï¿½Þ¤ï¿½(SJIS,UTF-8,EUC-JPï¿½ï¿½)');
 // Add 2004.10.27 by yoshis
-define('_MI_POPNUPBLOG_MAILSERVER', '¥á¡¼¥ë¡¦¥µ¡¼¥Ð');
-define('_MI_POPNUPBLOG_MAILSERVER_DESC', '¼õ¿®ÍÑ¥á¡¼¥ë¤ÎPOP3¥µ¡¼¥Ð¤òÀßÄê¤·¤Þ¤¹');
-define('_MI_POPNUPBLOG_MAILUSER', '¥á¡¼¥ë¡¦¥æ¡¼¥¶¡¼');
-define('_MI_POPNUPBLOG_MAILUSER_DESC', '¼õ¿®ÍÑ¥á¡¼¥ë¤Î¥æ¡¼¥¶¡¼Ì¾¤òÀßÄê¤·¤Þ¤¹');
-define('_MI_POPNUPBLOG_MAILPWD', '¥á¡¼¥ë¡¦¥Ñ¥¹¥ï¡¼¥É');
-define('_MI_POPNUPBLOG_MAILPWD_DESC', '¼õ¿®ÍÑ¥á¡¼¥ë¤Î¥Ñ¥¹¥ï¡¼¥É¤òÀßÄê¤·¤Þ¤¹');
-define('_MI_POPNUPBLOG_MAILADDR', '¥á¡¼¥ë¡¦¥¢¥É¥ì¥¹');
-define('_MI_POPNUPBLOG_MAILADDR_DESC', '¼õ¿®ÍÑ¥á¡¼¥ë¤Î¥¢¥É¥ì¥¹¤òÀßÄê¤·¤Þ¤¹');
+define('_MI_POPNUPBLOG_MAILSERVER', 'ï¿½á¡¼ï¿½ë¡¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_MAILSERVER_DESC', 'ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¥á¡¼ï¿½ï¿½ï¿½POP3ï¿½ï¿½ï¿½ï¿½ï¿½Ð¤ï¿½ï¿½ï¿½ï¿½ê¤·ï¿½Þ¤ï¿½');
+define('_MI_POPNUPBLOG_MAILUSER', 'ï¿½á¡¼ï¿½ë¡¦ï¿½æ¡¼ï¿½ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_MAILUSER_DESC', 'ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¥á¡¼ï¿½ï¿½Î¥æ¡¼ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ï¿½ï¿½ï¿½ï¿½ê¤·ï¿½Þ¤ï¿½');
+define('_MI_POPNUPBLOG_MAILPWD', 'ï¿½á¡¼ï¿½ë¡¦ï¿½Ñ¥ï¿½ï¿½ï¡¼ï¿½ï¿½');
+define('_MI_POPNUPBLOG_MAILPWD_DESC', 'ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¥á¡¼ï¿½ï¿½Î¥Ñ¥ï¿½ï¿½ï¡¼ï¿½É¤ï¿½ï¿½ï¿½ï¿½ê¤·ï¿½Þ¤ï¿½');
+define('_MI_POPNUPBLOG_MAILADDR', 'ï¿½á¡¼ï¿½ë¡¦ï¿½ï¿½ï¿½É¥ì¥¹');
+define('_MI_POPNUPBLOG_MAILADDR_DESC', 'ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¥á¡¼ï¿½ï¿½Î¥ï¿½ï¿½É¥ì¥¹ï¿½ï¿½ï¿½ï¿½ï¿½ê¤·ï¿½Þ¤ï¿½');
 // Add 2005.01.22 by yoshis
-define('_MI_POPNUPBLOG_GUESTBLOGID','Anonymous¥á¡¼¥ë¤ÎÅê¹ÆÀè¥Ö¥í¥°£É£Ä');
-define('_MI_POPNUPBLOG_ACTVTYPE','¿·µ¬¿½ÀÁ¥Ö¥í¥°¤ÎÍ­¸ú²½¤ÎÊýË¡');
-define('_MI_POPNUPBLOG_AUTOACTV','¼«Æ°Åª¤Ë¥¢¥«¥¦¥ó¥È¤òÍ­¸ú¤Ë¤¹¤ë');
-define('_MI_POPNUPBLOG_ADMINACTV','´ÉÍý¼Ô¤¬³ÎÇ§¤·¤Æ¥¢¥«¥¦¥ó¥È¤òÍ­¸ú¤Ë¤¹¤ë');
-define('_MI_POPNUPBLOG_NEWUNOTIFY','¥Ö¥í¥°¿½ÀÁ¤ä¾µÇ§¤òÉ¬Í×¤È¤¹¤ë¾ì¹ç¤Ë¥á¡¼¥ë¤Ë¤ÆÃÎ¤é¤»¤ò¼õ¤±¼è¤ë');
-define('_MI_POPNUPBLOG_SHOWNAME','¥æ¡¼¥¶Ì¾¤ÎÊÑ¤ï¤ê¤ËËÜÌ¾¤òÉ½¼¨¤¹¤ë');
+define('_MI_POPNUPBLOG_GUESTBLOGID','Anonymousï¿½á¡¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¥ï¿½ï¿½ï¿½É£ï¿½');
+define('_MI_POPNUPBLOG_ACTVTYPE','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¥ï¿½ï¿½ï¿½ï¿½Í­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¡');
+define('_MI_POPNUPBLOG_AUTOACTV','ï¿½ï¿½Æ°Åªï¿½Ë¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¤ï¿½Í­ï¿½ï¿½ï¿½Ë¤ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_ADMINACTV','ï¿½ï¿½ï¿½ï¿½ï¿½Ô¤ï¿½ï¿½ï¿½Ç§ï¿½ï¿½ï¿½Æ¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¤ï¿½Í­ï¿½ï¿½ï¿½Ë¤ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_NEWUNOTIFY','ï¿½Ö¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä¾µÇ§ï¿½ï¿½É¬ï¿½×¤È¤ï¿½ï¿½ï¿½ï¿½ï¿½Ë¥á¡¼ï¿½ï¿½Ë¤ï¿½ï¿½Î¤é¤»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_SHOWNAME','ï¿½æ¡¼ï¿½ï¿½Ì¾ï¿½ï¿½ï¿½Ñ¤ï¿½ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½');
 // Add 2006.03.21 by yoshis
-define('_MI_POPNUPBLOG_GROUPSETBYUSER','¥æ¡¼¥¶¤Ë¤è¤ë¥°¥ë¡¼¥×ÀßÄêµö²Ä¡ÊÅê¹Æ¡¦±ÜÍ÷¡¦¥³¥á¥ó¥È¡¦ÅêÉ¼¡Ë');
+define('_MI_POPNUPBLOG_GROUPSETBYUSER','ï¿½æ¡¼ï¿½ï¿½ï¿½Ë¤ï¿½ë¥°ï¿½ë¡¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½Æ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½É¼ï¿½ï¿½');
 
 // For notify
-define ('_MI_POPNUPBLOG_BLOG_NOTIFY', 'É½¼¨Ãæ¤Î¥Ö¥í¥°'); 
-define ('_MI_POPNUPBLOG_BLOG_NOTIFYDSC', 'É½¼¨Ãæ¤Î¥Ö¥í¥°¤ËÂÐ¤¹¤ëÄÌÃÎ¥ª¥×¥·¥ç¥ó');
+define('_MI_POPNUPBLOG_BLOG_NOTIFY', 'É½ï¿½ï¿½ï¿½ï¿½Î¥Ö¥ï¿½ï¿½'); 
+define('_MI_POPNUPBLOG_BLOG_NOTIFYDSC', 'É½ï¿½ï¿½ï¿½ï¿½Î¥Ö¥ï¿½ï¿½ï¿½ï¿½ï¿½Ð¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¥ï¿½ï¿½×¥ï¿½ï¿½ï¿½ï¿½');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NOTIFY', '¥â¥¸¥å¡¼¥ëÁ´ÂÎ');
-define ('_MI_POPNUPBLOG_GLOBAL_NOTIFYDSC', '¥Ö¥í¥°¥â¥¸¥å¡¼¥ëÁ´ÂÎ¤Ë¤ª¤±¤ëÄÌÃÎ¥ª¥×¥·¥ç¥ó');
+define('_MI_POPNUPBLOG_GLOBAL_NOTIFY', 'ï¿½â¥¸ï¿½å¡¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_GLOBAL_NOTIFYDSC', 'ï¿½Ö¥ï¿½ï¿½ï¿½â¥¸ï¿½å¡¼ï¿½ï¿½ï¿½ï¿½ï¿½Î¤Ë¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¥ï¿½ï¿½×¥ï¿½ï¿½ï¿½ï¿½');
 
-define ('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFY', '¿·µ¬Åê¹Æ');
-define ('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYCAP', '¤³¤Î¥Ö¥í¥°¤Ë¤ª¤¤¤Æ¿·µ¬Åê¹Æ¤¬¤¢¤Ã¤¿¾ì¹ç¤ËÄÌÃÎ¤¹¤ë');
-define ('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYDSC', '¤³¤Î¥Ö¥í¥°¤Ë¤ª¤¤¤Æ¿·µ¬Åê¹Æ¤¬¤¢¤Ã¤¿¾ì¹ç¤ËÄÌÃÎ¤¹¤ë');
-define ('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: ¥Ö¥í¥°¤Ë¤Æ¿·µ¬Åê¹Æ¤¬¤¢¤ê¤Þ¤·¤¿');
+define('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFY', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYCAP', 'ï¿½ï¿½ï¿½Î¥Ö¥ï¿½ï¿½ï¿½Ë¤ï¿½ï¿½ï¿½ï¿½Æ¿ï¿½ï¿½ï¿½ï¿½ï¿½Æ¤ï¿½ï¿½ï¿½ï¿½Ã¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¤ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYDSC', 'ï¿½ï¿½ï¿½Î¥Ö¥ï¿½ï¿½ï¿½Ë¤ï¿½ï¿½ï¿½ï¿½Æ¿ï¿½ï¿½ï¿½ï¿½ï¿½Æ¤ï¿½ï¿½ï¿½ï¿½Ã¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¤ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: ï¿½Ö¥ï¿½ï¿½ï¿½Ë¤Æ¿ï¿½ï¿½ï¿½ï¿½ï¿½Æ¤ï¿½ï¿½ï¿½ï¿½ï¿½Þ¤ï¿½ï¿½ï¿½');
 
-define ('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFY', '¿·µ¬Åê¹Æ¡ÊÅê¹ÆÊ¸´Þ¤à¡Ë');
-define ('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFYCAP', '¤³¤Î¥Ö¥í¥°¤Ë¤ª¤¤¤Æ¿·µ¬Åê¹Æ¤¬¤¢¤Ã¤¿¾ì¹ç¤ËÄÌÃÎ¤¹¤ë¡ÊÅê¹ÆÊ¸´Þ¤à¡Ë');
-define ('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFYDSC', '¤³¤Î¥Ö¥í¥°¤Ë¤ª¤¤¤Æ¿·µ¬Åê¹Æ¤¬¤¢¤Ã¤¿¾ì¹ç¤ËÄÌÃÎ¤¹¤ë¡ÊÅê¹ÆÊ¸´Þ¤à¡Ë');
-define ('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: ¥Ö¥í¥°¤Ë¤Æ¿·µ¬Åê¹Æ¤¬¤¢¤ê¤Þ¤·¤¿¡ÊÅê¹ÆÊ¸´Þ¤à¡Ë');
+define('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFY', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¡ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½Þ¤ï¿½ï¿½');
+define('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFYCAP', 'ï¿½ï¿½ï¿½Î¥Ö¥ï¿½ï¿½ï¿½Ë¤ï¿½ï¿½ï¿½ï¿½Æ¿ï¿½ï¿½ï¿½ï¿½ï¿½Æ¤ï¿½ï¿½ï¿½ï¿½Ã¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½Þ¤ï¿½ï¿½');
+define('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFYDSC', 'ï¿½ï¿½ï¿½Î¥Ö¥ï¿½ï¿½ï¿½Ë¤ï¿½ï¿½ï¿½ï¿½Æ¿ï¿½ï¿½ï¿½ï¿½ï¿½Æ¤ï¿½ï¿½ï¿½ï¿½Ã¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½Þ¤ï¿½ï¿½');
+define('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: ï¿½Ö¥ï¿½ï¿½ï¿½Ë¤Æ¿ï¿½ï¿½ï¿½ï¿½ï¿½Æ¤ï¿½ï¿½ï¿½ï¿½ï¿½Þ¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½Þ¤ï¿½ï¿½');
 
-define ('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFY', '¿·µ¬¥³¥á¥ó¥È¡Ê¥³¥á¥ó¥ÈÊ¸´Þ¤à¡Ë');
-define ('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFYCAP', '¤³¤Î¥Ö¥í¥°¤Ë¤ª¤¤¤Æ¿·µ¬¥³¥á¥ó¥È¤¬¤¢¤Ã¤¿¾ì¹ç¤ËÄÌÃÎ¤¹¤ë¡Ê¥³¥á¥ó¥ÈÊ¸´Þ¤à¡Ë');
-define ('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFYDSC', '¤³¤Î¥Ö¥í¥°¤Ë¤ª¤¤¤Æ¿·µ¬¥³¥á¥ó¥È¤¬¤¢¤Ã¤¿¾ì¹ç¤ËÄÌÃÎ¤¹¤ë¡Ê¥³¥á¥ó¥ÈÊ¸´Þ¤à¡Ë');
-define ('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: ¥Ö¥í¥°¤Ë¤Æ¿·µ¬¥³¥á¥ó¥È¤¬¤¢¤ê¤Þ¤·¤¿¡Ê¥³¥á¥ó¥ÈÊ¸´Þ¤à¡Ë');
+define('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFY', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡Ê¥ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½Þ¤ï¿½ï¿½');
+define('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFYCAP', 'ï¿½ï¿½ï¿½Î¥Ö¥ï¿½ï¿½ï¿½Ë¤ï¿½ï¿½ï¿½ï¿½Æ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¤ï¿½ï¿½ï¿½ï¿½Ã¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¤ï¿½ï¿½ï¿½Ê¥ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½Þ¤ï¿½ï¿½');
+define('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFYDSC', 'ï¿½ï¿½ï¿½Î¥Ö¥ï¿½ï¿½ï¿½Ë¤ï¿½ï¿½ï¿½ï¿½Æ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¤ï¿½ï¿½ï¿½ï¿½Ã¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¤ï¿½ï¿½ï¿½Ê¥ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½Þ¤ï¿½ï¿½');
+define('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: ï¿½Ö¥ï¿½ï¿½ï¿½Ë¤Æ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¤ï¿½ï¿½ï¿½ï¿½ï¿½Þ¤ï¿½ï¿½ï¿½ï¿½Ê¥ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½Þ¤ï¿½ï¿½');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFY', '¿·µ¬¥Ö¥í¥°');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYCAP', '¿·µ¬¥Ö¥í¥°¤¬ºîÀ®¤µ¤ì¤¿¾ì¹ç¤ËÄÌÃÎ¤¹¤ë');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYDSC', '¿·µ¬¥Ö¥í¥°¤¬ºîÀ®¤µ¤ì¤¿¾ì¹ç¤ËÄÌÃÎ¤¹¤ë');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: ¿·µ¬¥Ö¥í¥°¤¬ºîÀ®¤µ¤ì¤Þ¤·¤¿');
+define('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFY', 'ï¿½ï¿½ï¿½ï¿½ï¿½Ö¥ï¿½ï¿½');
+define('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYCAP', 'ï¿½ï¿½ï¿½ï¿½ï¿½Ö¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì¤¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¤ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYDSC', 'ï¿½ï¿½ï¿½ï¿½ï¿½Ö¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì¤¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¤ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: ï¿½ï¿½ï¿½ï¿½ï¿½Ö¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ¤ï¿½ï¿½ï¿½');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFY', '¿·µ¬Åê¹Æ');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYCAP', '¿·µ¬Åê¹Æ¤¬¤¢¤Ã¤¿¾ì¹ç¤ËÄÌÃÎ¤¹¤ë');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYDSC', '¿·µ¬Åê¹Æ¤¬¤¢¤Ã¤¿¾ì¹ç¤ËÄÌÃÎ¤¹¤ë');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: ¿·µ¬Åê¹Æ¤¬¤¢¤ê¤Þ¤·¤¿');
+define('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFY', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYCAP', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¤ï¿½ï¿½ï¿½ï¿½Ã¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¤ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYDSC', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¤ï¿½ï¿½ï¿½ï¿½Ã¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¤ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¤ï¿½ï¿½ï¿½ï¿½ï¿½Þ¤ï¿½ï¿½ï¿½');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFY', '¿·µ¬Åê¹Æ¡ÊÅê¹ÆÊ¸´Þ¤à¡Ë');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYCAP', '¿·µ¬Åê¹Æ¤¬¤¢¤Ã¤¿¾ì¹ç¤ËÄÌÃÎ¤¹¤ë¡ÊÅê¹ÆÊ¸ÉÕ¤­¡Ë');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYDSC', '¿·µ¬Åê¹Æ¤¬¤¢¤Ã¤¿¾ì¹ç¤ËÄÌÃÎ¤¹¤ë¡ÊÅê¹ÆÊ¸ÉÕ¤­¡Ë');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: ¿·µ¬Åê¹Æ¡ÊÅê¹ÆÊ¸ÉÕ¤­¡Ë');
+define('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFY', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¡ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½Þ¤ï¿½ï¿½');
+define('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYCAP', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¤ï¿½ï¿½ï¿½ï¿½Ã¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½Õ¤ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYDSC', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¤ï¿½ï¿½ï¿½ï¿½Ã¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½Õ¤ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¡ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½Õ¤ï¿½ï¿½ï¿½');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFY', '¿·µ¬¥³¥á¥ó¥È¡Ê¥³¥á¥ó¥ÈÊ¸´Þ¤à¡Ë');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFYCAP', '¿·µ¬¥³¥á¥ó¥È¤¬¤¢¤Ã¤¿¾ì¹ç¤ËÄÌÃÎ¤¹¤ë¡Ê¥³¥á¥ó¥ÈÊ¸ÉÕ¤­¡Ë');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFYDSC', '¿·µ¬¥³¥á¥ó¥È¤¬¤¢¤Ã¤¿¾ì¹ç¤ËÄÌÃÎ¤¹¤ë¡Ê¥³¥á¥ó¥ÈÊ¸ÉÕ¤­¡Ë');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: ¿·µ¬¥³¥á¥ó¥È¡Ê¥³¥á¥ó¥ÈÊ¸ÉÕ¤­¡Ë');
+define('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFY', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡Ê¥ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½Þ¤ï¿½ï¿½');
+define('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFYCAP', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¤ï¿½ï¿½ï¿½ï¿½Ã¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¤ï¿½ï¿½ï¿½Ê¥ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½Õ¤ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFYDSC', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¤ï¿½ï¿½ï¿½ï¿½Ã¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¤ï¿½ï¿½ï¿½Ê¥ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½Õ¤ï¿½ï¿½ï¿½');
+define('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡Ê¥ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½Õ¤ï¿½ï¿½ï¿½');
 
 ?>

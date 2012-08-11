@@ -53,44 +53,44 @@ define('_MI_POPNUPBLOG_SHOWNAME','Vervang gebruikersnaam door echte naam?');
 define('_MI_POPNUPBLOG_GROUPSETBYUSER','Groep rechten bepaald door gebruiker (blogpost,beeld,commentaar,stemmen)');
 
 // For Notify
-define ('_MI_POPNUPBLOG_BLOG_NOTIFY', 'Blog');
-define ('_MI_POPNUPBLOG_BLOG_NOTIFYDSC', 'Notificatie opties voor huidige blog.');
+define('_MI_POPNUPBLOG_BLOG_NOTIFY', 'Blog');
+define('_MI_POPNUPBLOG_BLOG_NOTIFYDSC', 'Notificatie opties voor huidige blog.');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NOTIFY', 'Algemeen');
-define ('_MI_POPNUPBLOG_GLOBAL_NOTIFYDSC', 'Algemene notificatie opties voor blog.');
+define('_MI_POPNUPBLOG_GLOBAL_NOTIFY', 'Algemeen');
+define('_MI_POPNUPBLOG_GLOBAL_NOTIFYDSC', 'Algemene notificatie opties voor blog.');
 
-define ('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFY', 'Nieuwe Blogpost');
-define ('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYCAP', 'Bericht mij van alle nieuwe post in deze blog.');
-define ('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYDSC', 'Ontvang een bericht wanneer de huidige blog is vernieuwd.');
-define ('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-bericht : Er is een nieuwe blogpost');
+define('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFY', 'Nieuwe Blogpost');
+define('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYCAP', 'Bericht mij van alle nieuwe post in deze blog.');
+define('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYDSC', 'Ontvang een bericht wanneer de huidige blog is vernieuwd.');
+define('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-bericht : Er is een nieuwe blogpost');
 
-define ('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFY', 'Nieuwe Blogpost (Volledige Tekst)');
-define ('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFYCAP', 'Bericht mij van alle nieuwe post in deze blog (met de volledige tekst in het bericht).');
-define ('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFYDSC', 'Ontvang een volledig bericht wanneer de huidige blog is vernieuwd.');
-define ('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notificatie : Nieuwe Blog post (Volledige tekst)');
+define('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFY', 'Nieuwe Blogpost (Volledige Tekst)');
+define('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFYCAP', 'Bericht mij van alle nieuwe post in deze blog (met de volledige tekst in het bericht).');
+define('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFYDSC', 'Ontvang een volledig bericht wanneer de huidige blog is vernieuwd.');
+define('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notificatie : Nieuwe Blog post (Volledige tekst)');
 
-define ('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFY', 'Nieuw commentaar (Volledige Tekst)');
-define ('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFYCAP', 'Bericht mij van alle nieuwe commentaren (met de volledige tekst in het bericht).');
-define ('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFYDSC', 'Ontvang een volledig bericht wanneer de huidige blog is vernieuwd van commentaar.');
-define ('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-bericht : Nieuw commentaar (Volledige tekst)');
+define('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFY', 'Nieuw commentaar (Volledige Tekst)');
+define('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFYCAP', 'Bericht mij van alle nieuwe commentaren (met de volledige tekst in het bericht).');
+define('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFYDSC', 'Ontvang een volledig bericht wanneer de huidige blog is vernieuwd van commentaar.');
+define('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-bericht : Nieuw commentaar (Volledige tekst)');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFY', 'Nieuwe Blog');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYCAP', 'Bericht mij wanneer een nieuwe Blog is gestart.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYDSC', 'Ontvang een bericht wanneer een nieuwe Blog is gestart.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-bericht : Nieuwe blog');
+define('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFY', 'Nieuwe Blog');
+define('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYCAP', 'Bericht mij wanneer een nieuwe Blog is gestart.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYDSC', 'Ontvang een bericht wanneer een nieuwe Blog is gestart.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-bericht : Nieuwe blog');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFY', 'Nieuwe Post');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYCAP', 'Bericht mij van alle nieuwe post.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYDSC', 'Ontvang een bericht wanneer er nieuwe post is.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-bericht : Nieuwe post');
+define('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFY', 'Nieuwe Post');
+define('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYCAP', 'Bericht mij van alle nieuwe post.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYDSC', 'Ontvang een bericht wanneer er nieuwe post is.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-bericht : Nieuwe post');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFY', 'Nieuwe Post (Volledig)');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYCAP', 'Bericht mij van alle nieuwe post (inclusief bericht-tekst).');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYDSC', 'Ontvang een volledig tekstbericht van alle nieuwe post.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-bericht : Nieuwe post (Volledig)');
+define('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFY', 'Nieuwe Post (Volledig)');
+define('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYCAP', 'Bericht mij van alle nieuwe post (inclusief bericht-tekst).');
+define('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYDSC', 'Ontvang een volledig tekstbericht van alle nieuwe post.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-bericht : Nieuwe post (Volledig)');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFY', 'Nieuw commentaar (Volledige Tekst)');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFYCAP', 'Bericht mij van elk nieuw commentaar (met volledige tekst ingesloten in bericht).');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFYDSC', 'Ontvang de volledige tekst van elk nieuw bericht dat is voorzien van commentaar.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-bericht : Nieuw commentaar (Volledige tekst)');
+define('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFY', 'Nieuw commentaar (Volledige Tekst)');
+define('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFYCAP', 'Bericht mij van elk nieuw commentaar (met volledige tekst ingesloten in bericht).');
+define('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFYDSC', 'Ontvang de volledige tekst van elk nieuw bericht dat is voorzien van commentaar.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-bericht : Nieuw commentaar (Volledige tekst)');
 ?>

@@ -1,23 +1,23 @@
 <?php
 // $Id$ 
 
-define ('_AM_POPNUPBLOG_CREATE','Ñîçäàòü íîâîãî Blog ïîëüçîâàòåëÿ');
-define ('_AM_POPNUPBLOG_EDIT','Ðåäàêòèðîâàòü');
-define ('_AM_POPNUPBLOG_OPERATION','ÎÏÅÐÀÖÈß');
-define ('_AM_POPNUPBLOG_APPLICATED_USER','blog ïðåòåíäåíòà');
-define ('_AM_POPNUPBLOG_BLOG_TITLE','BLOG Çàãîëîâîê');
-define ('_AM_POPNUPBLOG_REJECT_APPLICATION','îòêëîíåíèå');
-define ('_AM_POPNUPBLOG_USER_LIST','Ñïèñîê ïîëüçîâàòåëåé');
-define ('_AM_POPNUPBLOG_PERMISSION','Ðàçðåøåíèå');
-define ('_AM_POPNUPBLOG_LASTUPDATE','Ïîñëåäíåå îáíîâëåíèå');
-define ('_AM_POPNUPBLOG_BLOG_EMAIL','Îòïðàâèòü ïî e-mail');
-define ('_AM_POPNUPBLOG_ALLOW_APPLICATION','Ðàçðåøèòü');
-define ('_AM_POPNUPBLOG_NEW_VERSION','Íîâàÿ âåðñèÿ âûïóùåíà');
-define ('_AM_POPNUPBLOG_NAME','Èìÿ');
+define('_AM_POPNUPBLOG_CREATE','Ã‘Ã®Ã§Ã¤Ã Ã²Ã¼ Ã­Ã®Ã¢Ã®Ã£Ã® Blog Ã¯Ã®Ã«Ã¼Ã§Ã®Ã¢Ã Ã²Ã¥Ã«Ã¿');
+define('_AM_POPNUPBLOG_EDIT','ÃÃ¥Ã¤Ã ÃªÃ²Ã¨Ã°Ã®Ã¢Ã Ã²Ã¼');
+define('_AM_POPNUPBLOG_OPERATION','ÃŽÃÃ…ÃÃ€Ã–ÃˆÃŸ');
+define('_AM_POPNUPBLOG_APPLICATED_USER','blog Ã¯Ã°Ã¥Ã²Ã¥Ã­Ã¤Ã¥Ã­Ã²Ã ');
+define('_AM_POPNUPBLOG_BLOG_TITLE','BLOG Ã‡Ã Ã£Ã®Ã«Ã®Ã¢Ã®Ãª');
+define('_AM_POPNUPBLOG_REJECT_APPLICATION','Ã®Ã²ÃªÃ«Ã®Ã­Ã¥Ã­Ã¨Ã¥');
+define('_AM_POPNUPBLOG_USER_LIST','Ã‘Ã¯Ã¨Ã±Ã®Ãª Ã¯Ã®Ã«Ã¼Ã§Ã®Ã¢Ã Ã²Ã¥Ã«Ã¥Ã©');
+define('_AM_POPNUPBLOG_PERMISSION','ÃÃ Ã§Ã°Ã¥Ã¸Ã¥Ã­Ã¨Ã¥');
+define('_AM_POPNUPBLOG_LASTUPDATE','ÃÃ®Ã±Ã«Ã¥Ã¤Ã­Ã¥Ã¥ Ã®Ã¡Ã­Ã®Ã¢Ã«Ã¥Ã­Ã¨Ã¥');
+define('_AM_POPNUPBLOG_BLOG_EMAIL','ÃŽÃ²Ã¯Ã°Ã Ã¢Ã¨Ã²Ã¼ Ã¯Ã® e-mail');
+define('_AM_POPNUPBLOG_ALLOW_APPLICATION','ÃÃ Ã§Ã°Ã¥Ã¸Ã¨Ã²Ã¼');
+define('_AM_POPNUPBLOG_NEW_VERSION','ÃÃ®Ã¢Ã Ã¿ Ã¢Ã¥Ã°Ã±Ã¨Ã¿ Ã¢Ã»Ã¯Ã³Ã¹Ã¥Ã­Ã ');
+define('_AM_POPNUPBLOG_NAME','ÃˆÃ¬Ã¿');
 define('_AM_VOTE', 'Vote');
 define('_AM_COMMENT', 'Comment');
 define('_AM_READ', 'Read');
-define ('_AM_POPNUPBLOG_UID','uid');
+define('_AM_POPNUPBLOG_UID','uid');
 define('_AM_POPNUPBLOG_GROUP', 'Group: ');
 define('_AM_POPNUPBLOG_GROUPID', 'BLOG Group');
 //%%%%%%	Ported from newbb admin %%%%%

@@ -53,45 +53,45 @@ define("_MI_POPNUPBLOG_SHOWNAME","Replace user name with real name");
 define("_MI_POPNUPBLOG_GROUPSETBYUSER","Group permission by user (post,view,comment,vote)");
 
 // For Notify
-define ('_MI_POPNUPBLOG_BLOG_NOTIFY', 'Forum');
-define ('_MI_POPNUPBLOG_BLOG_NOTIFYDSC', 'Notification options that apply to the current blog.');
+define('_MI_POPNUPBLOG_BLOG_NOTIFY', 'Forum');
+define('_MI_POPNUPBLOG_BLOG_NOTIFYDSC', 'Notification options that apply to the current blog.');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NOTIFY', 'Global');
-define ('_MI_POPNUPBLOG_GLOBAL_NOTIFYDSC', 'Global blog notification options.');
+define('_MI_POPNUPBLOG_GLOBAL_NOTIFY', 'Global');
+define('_MI_POPNUPBLOG_GLOBAL_NOTIFYDSC', 'Global blog notification options.');
 
-define ('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFY', 'New Post');
-define ('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYCAP', 'Notify me of any new posts in the current blog.');
-define ('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYDSC', 'Receive notification when any new message is posted in the current blog.');
-define ('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New post in blog');
+define('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFY', 'New Post');
+define('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYCAP', 'Notify me of any new posts in the current blog.');
+define('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYDSC', 'Receive notification when any new message is posted in the current blog.');
+define('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New post in blog');
 
-define ('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFY', 'New Post (Full Text)');
-define ('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFYCAP', 'Notify me of any new posts (include full text in message).');
-define ('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFYDSC', 'Receive full text notification when any new message is posted.');
-define ('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New post (full text)');
+define('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFY', 'New Post (Full Text)');
+define('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFYCAP', 'Notify me of any new posts (include full text in message).');
+define('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFYDSC', 'Receive full text notification when any new message is posted.');
+define('_MI_POPNUPBLOG_BLOG_NEWFULLPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New post (full text)');
 
-define ('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFY', 'New comment (Full Text)');
-define ('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFYCAP', 'Notify me of any new comments (include full text in message).');
-define ('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFYDSC', 'Receive full text notification when any new message is commented.');
-define ('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New comment (full text)');
+define('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFY', 'New comment (Full Text)');
+define('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFYCAP', 'Notify me of any new comments (include full text in message).');
+define('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFYDSC', 'Receive full text notification when any new message is commented.');
+define('_MI_POPNUPBLOG_BLOG_NEWCOMMENT_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New comment (full text)');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFY', 'New Blog');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYCAP', 'Notify me when a new blog is created.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYDSC', 'Receive notification when a new blog is created.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New blog');
+define('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFY', 'New Blog');
+define('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYCAP', 'Notify me when a new blog is created.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYDSC', 'Receive notification when a new blog is created.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New blog');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFY', 'New Post');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYCAP', 'Notify me of any new posts.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYDSC', 'Receive notification when any new message is posted.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New post');
+define('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFY', 'New Post');
+define('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYCAP', 'Notify me of any new posts.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYDSC', 'Receive notification when any new message is posted.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New post');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFY', 'New Post (Full Text)');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYCAP', 'Notify me of any new posts (include full text in message).');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYDSC', 'Receive full text notification when any new message is posted.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New post (full text)');
+define('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFY', 'New Post (Full Text)');
+define('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYCAP', 'Notify me of any new posts (include full text in message).');
+define('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYDSC', 'Receive full text notification when any new message is posted.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New post (full text)');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFY', 'New comment (Full Text)');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFYCAP', 'Notify me of any new comments (include full text in message).');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFYDSC', 'Receive full text notification when any new message is commented.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New comment (full text)');
+define('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFY', 'New comment (Full Text)');
+define('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFYCAP', 'Notify me of any new comments (include full text in message).');
+define('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFYDSC', 'Receive full text notification when any new message is commented.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWCOMMENT_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New comment (full text)');
 
 ?>

@@ -1,35 +1,35 @@
 <?php
 // $Id$ 
 
-define ('_MI_POPNUPBLOG_APPL_DESC', '');
-define ('_MI_POPNUPBLOG_1_LINE',' ÍåäàâíŽî îáíîâèŽë blog ');
-define ('_MI_POPNUPBLOG_CONF_DESC',' Îïèñàíèå ');
-define ('_MI_POPNUPBLOG_TRACKBACK',' TrackBack ');
-define ('_MI_POPNUPBLOG_REWRITE_TITLE',' ÈñïîëüçóéòŽå Àïà÷Žà, ïåðåçàïèñûâàþò äâèãàòåëŽü ');
-define ('_MI_POPNUPBLOG_NAME',' PopnupBLOG ');
-define ('_MI_POPNUPBLOG_DESC',' Popnup Blog ');
-define ('_MI_POPNUPBLOG_UNUSE_UPDATE_PING',' ÍåèñïîëüçóéòŽå óòèëèòŽó ping ìîäèôèêàöèŽè ');
-define ('_MI_POPNUPBLOG_UNUSE_TRACKBACK',' ÍåèñïîëüçóéòŽå trackback ');
-define ('_MI_POPNUPBLOG_APPL_WAITING_TITLE',' PopnupBlog ÍîâîŽå Ïðèëîæåíèå ');
-define ('_MI_POPNUPBLOG_NAME_BIG_BLOCK',' PopnupBlog ');
-define ('_MI_POPNUPBLOG_USE_REWRITE',' ÈñïîëüçóéòŽå ïåðåçàïèñü ');
-define ('_MI_POPNUPBLOG_UPDATE_PING',' ÈñïîëüçóéòŽå óòèëèòŽó ping ìîäèôèêàöèŽè ');
-define ('_MI_POPNUPBLOG_1_LINE_DESC',' 1 áëîê ïðåäñòàâëåíèŽÿ(âèäà) ëèíèŽè ');
-define ('_MI_POPNUPBLOG_REWRITE_DESC',' Ïîëüçîâàòåëü ìîæåŽò èñïîëüçîâàòü blog url from/modules/popnupblog/view/index.php? uid=1 Žê/modules/popnupblog/view/1.html (òîëüêî ýêñïåðŽò) ');
-define ('_MI_POPNUPBLOG_APPL_WAITING',' ÍîâîŽå Ïðèëîæåíèå ');
-define ('_MI_POPNUPBLOG_UPDATE_PING_DESC',' ÈñïîëüçóéòŽå óòèëèòŽó ping ìîäèôèêàöèŽè ');
-define ('_MI_POPNUPBLOG_WRITE',' Ïèøèòå Blog ');
+define('_MI_POPNUPBLOG_APPL_DESC', '');
+define('_MI_POPNUPBLOG_1_LINE',' ÃÃ¥Ã¤Ã Ã¢Ã­Å½Ã® Ã®Ã¡Ã­Ã®Ã¢Ã¨Å½Ã« blog ');
+define('_MI_POPNUPBLOG_CONF_DESC',' ÃŽÃ¯Ã¨Ã±Ã Ã­Ã¨Ã¥ ');
+define('_MI_POPNUPBLOG_TRACKBACK',' TrackBack ');
+define('_MI_POPNUPBLOG_REWRITE_TITLE',' ÃˆÃ±Ã¯Ã®Ã«Ã¼Ã§Ã³Ã©Ã²Å½Ã¥ Ã€Ã¯Ã Ã·Å½Ã , Ã¯Ã¥Ã°Ã¥Ã§Ã Ã¯Ã¨Ã±Ã»Ã¢Ã Ã¾Ã² Ã¤Ã¢Ã¨Ã£Ã Ã²Ã¥Ã«Å½Ã¼ ');
+define('_MI_POPNUPBLOG_NAME',' PopnupBLOG ');
+define('_MI_POPNUPBLOG_DESC',' Popnup Blog ');
+define('_MI_POPNUPBLOG_UNUSE_UPDATE_PING',' ÃÃ¥Ã¨Ã±Ã¯Ã®Ã«Ã¼Ã§Ã³Ã©Ã²Å½Ã¥ Ã³Ã²Ã¨Ã«Ã¨Ã²Å½Ã³ ping Ã¬Ã®Ã¤Ã¨Ã´Ã¨ÃªÃ Ã¶Ã¨Å½Ã¨ ');
+define('_MI_POPNUPBLOG_UNUSE_TRACKBACK',' ÃÃ¥Ã¨Ã±Ã¯Ã®Ã«Ã¼Ã§Ã³Ã©Ã²Å½Ã¥ trackback ');
+define('_MI_POPNUPBLOG_APPL_WAITING_TITLE',' PopnupBlog ÃÃ®Ã¢Ã®Å½Ã¥ ÃÃ°Ã¨Ã«Ã®Ã¦Ã¥Ã­Ã¨Ã¥ ');
+define('_MI_POPNUPBLOG_NAME_BIG_BLOCK',' PopnupBlog ');
+define('_MI_POPNUPBLOG_USE_REWRITE',' ÃˆÃ±Ã¯Ã®Ã«Ã¼Ã§Ã³Ã©Ã²Å½Ã¥ Ã¯Ã¥Ã°Ã¥Ã§Ã Ã¯Ã¨Ã±Ã¼ ');
+define('_MI_POPNUPBLOG_UPDATE_PING',' ÃˆÃ±Ã¯Ã®Ã«Ã¼Ã§Ã³Ã©Ã²Å½Ã¥ Ã³Ã²Ã¨Ã«Ã¨Ã²Å½Ã³ ping Ã¬Ã®Ã¤Ã¨Ã´Ã¨ÃªÃ Ã¶Ã¨Å½Ã¨ ');
+define('_MI_POPNUPBLOG_1_LINE_DESC',' 1 Ã¡Ã«Ã®Ãª Ã¯Ã°Ã¥Ã¤Ã±Ã²Ã Ã¢Ã«Ã¥Ã­Ã¨Å½Ã¿(Ã¢Ã¨Ã¤Ã ) Ã«Ã¨Ã­Ã¨Å½Ã¨ ');
+define('_MI_POPNUPBLOG_REWRITE_DESC',' ÃÃ®Ã«Ã¼Ã§Ã®Ã¢Ã Ã²Ã¥Ã«Ã¼ Ã¬Ã®Ã¦Ã¥Å½Ã² Ã¨Ã±Ã¯Ã®Ã«Ã¼Ã§Ã®Ã¢Ã Ã²Ã¼ blog url from/modules/popnupblog/view/index.php? uid=1 Å½Ãª/modules/popnupblog/view/1.html (Ã²Ã®Ã«Ã¼ÃªÃ® Ã½ÃªÃ±Ã¯Ã¥Ã°Å½Ã²) ');
+define('_MI_POPNUPBLOG_APPL_WAITING',' ÃÃ®Ã¢Ã®Å½Ã¥ ÃÃ°Ã¨Ã«Ã®Ã¦Ã¥Ã­Ã¨Ã¥ ');
+define('_MI_POPNUPBLOG_UPDATE_PING_DESC',' ÃˆÃ±Ã¯Ã®Ã«Ã¼Ã§Ã³Ã©Ã²Å½Ã¥ Ã³Ã²Ã¨Ã«Ã¨Ã²Å½Ã³ ping Ã¬Ã®Ã¤Ã¨Ã´Ã¨ÃªÃ Ã¶Ã¨Å½Ã¨ ');
+define('_MI_POPNUPBLOG_WRITE',' ÃÃ¨Ã¸Ã¨Ã²Ã¥ Blog ');
 define('_MI_POPNUPBLOG_PREFERENCE', 'Preference');
 define('_MI_POPNUPBLOG_APPLY', 'New Blog');
-define ('_MI_POPNUPBLOG_TRACKBACK_DESC',' ÄîïóñòèòŽå ÎñîáåííîñòŽè TrackBack ');
-define ('_MI_POPNUPBLOG_UNUSE_REWRITE',' ÍåèñïîëüçóéòŽå ïåðåçàïèñü ');
-define ('_MI_POPNUPBLOG_APPL_DENY',' íåðàçðåøèòŽå ');
-define ('_MI_POPNUPBLOG_CONFIG_RSS_DEF',' Popnup blog ïîëüçîâàòåëü ìîæåŽò ïèñàòü ');
-define ('_MI_POPNUPBLOG_USE_TRACKBACK',' ÈñïîëüçóéòŽå trackback ');
-define ('_MI_POPNUPBLOG_APPL_ALLOW',' ðàçðåøèòŽå ');
-define ('_MI_POPNUPBLOG_APPL_OK',' ÏîçâîëèòŽå ïðèëîæåíèþ äëŽÿ ïîëüçîâàòåŽëŽÿ ');
-define ('_MI_POPNUPBLOG_USE_UPDATE_PING',' ÈñïîëüçóéòŽå óòèëèòŽó ping ìîäèôèêàöèŽè ');
-define ('_MI_POPNUPBLOG_CONFIG_RSS_DESC',' Îïèñàíèå äëŽÿ ýòîãŽî blog íà ïîäà÷å rss ');
+define('_MI_POPNUPBLOG_TRACKBACK_DESC',' Ã„Ã®Ã¯Ã³Ã±Ã²Ã¨Ã²Å½Ã¥ ÃŽÃ±Ã®Ã¡Ã¥Ã­Ã­Ã®Ã±Ã²Å½Ã¨ TrackBack ');
+define('_MI_POPNUPBLOG_UNUSE_REWRITE',' ÃÃ¥Ã¨Ã±Ã¯Ã®Ã«Ã¼Ã§Ã³Ã©Ã²Å½Ã¥ Ã¯Ã¥Ã°Ã¥Ã§Ã Ã¯Ã¨Ã±Ã¼ ');
+define('_MI_POPNUPBLOG_APPL_DENY',' Ã­Ã¥Ã°Ã Ã§Ã°Ã¥Ã¸Ã¨Ã²Å½Ã¥ ');
+define('_MI_POPNUPBLOG_CONFIG_RSS_DEF',' Popnup blog Ã¯Ã®Ã«Ã¼Ã§Ã®Ã¢Ã Ã²Ã¥Ã«Ã¼ Ã¬Ã®Ã¦Ã¥Å½Ã² Ã¯Ã¨Ã±Ã Ã²Ã¼ ');
+define('_MI_POPNUPBLOG_USE_TRACKBACK',' ÃˆÃ±Ã¯Ã®Ã«Ã¼Ã§Ã³Ã©Ã²Å½Ã¥ trackback ');
+define('_MI_POPNUPBLOG_APPL_ALLOW',' Ã°Ã Ã§Ã°Ã¥Ã¸Ã¨Ã²Å½Ã¥ ');
+define('_MI_POPNUPBLOG_APPL_OK',' ÃÃ®Ã§Ã¢Ã®Ã«Ã¨Ã²Å½Ã¥ Ã¯Ã°Ã¨Ã«Ã®Ã¦Ã¥Ã­Ã¨Ã¾ Ã¤Ã«Å½Ã¿ Ã¯Ã®Ã«Ã¼Ã§Ã®Ã¢Ã Ã²Ã¥Å½Ã«Å½Ã¿ ');
+define('_MI_POPNUPBLOG_USE_UPDATE_PING',' ÃˆÃ±Ã¯Ã®Ã«Ã¼Ã§Ã³Ã©Ã²Å½Ã¥ Ã³Ã²Ã¨Ã«Ã¨Ã²Å½Ã³ ping Ã¬Ã®Ã¤Ã¨Ã´Ã¨ÃªÃ Ã¶Ã¨Å½Ã¨ ');
+define('_MI_POPNUPBLOG_CONFIG_RSS_DESC',' ÃŽÃ¯Ã¨Ã±Ã Ã­Ã¨Ã¥ Ã¤Ã«Å½Ã¿ Ã½Ã²Ã®Ã£Å½Ã® blog Ã­Ã  Ã¯Ã®Ã¤Ã Ã·Ã¥ rss ');
 // Add 2004.10.27 by yoshis
 define('_MI_POPNUPBLOG_MAILSERVER', 'Mail Server');
 define('_MI_POPNUPBLOG_MAILSERVER_DESC', 'Input pop3 mail server for recive blog.');
@@ -50,31 +50,31 @@ define("_MI_POPNUPBLOG_SHOWNAME","Replace user name with real name");
 define("_MI_POPNUPBLOG_GROUPSETBYUSER","Group permission by user (post,view,comment,vote)");
 
 // For Notify
-define ('_MI_POPNUPBLOG_BLOG_NOTIFY', 'Forum');
-define ('_MI_POPNUPBLOG_BLOG_NOTIFYDSC', 'Notification options that apply to the current blog.');
+define('_MI_POPNUPBLOG_BLOG_NOTIFY', 'Forum');
+define('_MI_POPNUPBLOG_BLOG_NOTIFYDSC', 'Notification options that apply to the current blog.');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NOTIFY', 'Global');
-define ('_MI_POPNUPBLOG_GLOBAL_NOTIFYDSC', 'Global blog notification options.');
+define('_MI_POPNUPBLOG_GLOBAL_NOTIFY', 'Global');
+define('_MI_POPNUPBLOG_GLOBAL_NOTIFYDSC', 'Global blog notification options.');
 
-define ('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFY', 'New Post');
-define ('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYCAP', 'Notify me of any new posts in the current blog.');
-define ('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYDSC', 'Receive notification when any new message is posted in the current blog.');
-define ('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New post in blog');
+define('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFY', 'New Post');
+define('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYCAP', 'Notify me of any new posts in the current blog.');
+define('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYDSC', 'Receive notification when any new message is posted in the current blog.');
+define('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New post in blog');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFY', 'New Blog');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYCAP', 'Notify me when a new blog is created.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYDSC', 'Receive notification when a new blog is created.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New blog');
+define('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFY', 'New Blog');
+define('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYCAP', 'Notify me when a new blog is created.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYDSC', 'Receive notification when a new blog is created.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New blog');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFY', 'New Post');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYCAP', 'Notify me of any new posts.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYDSC', 'Receive notification when any new message is posted.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New post');
+define('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFY', 'New Post');
+define('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYCAP', 'Notify me of any new posts.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYDSC', 'Receive notification when any new message is posted.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New post');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFY', 'New Post (Full Text)');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYCAP', 'Notify me of any new posts (include full text in message).');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYDSC', 'Receive full text notification when any new message is posted.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New post (full text)');
+define('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFY', 'New Post (Full Text)');
+define('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYCAP', 'Notify me of any new posts (include full text in message).');
+define('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYDSC', 'Receive full text notification when any new message is posted.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : New post (full text)');
 
 ?>
 
