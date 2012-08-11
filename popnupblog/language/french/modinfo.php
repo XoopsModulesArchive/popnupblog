@@ -50,30 +50,30 @@ define("_MI_POPNUPBLOG_SHOWNAME","Remplace le nom de l'utilisateur par son nom r
 define("_MI_POPNUPBLOG_GROUPSETBYUSER","Permission de groupe par l'utilisateur (poteau, vue, commentaire, voix)");
 
 // For Notify
-define ('_MI_POPNUPBLOG_BLOG_NOTIFY', 'Forum');
-define ('_MI_POPNUPBLOG_BLOG_NOTIFYDSC', 'Options de notification &agrave; appliquer au blog courant.');
+define('_MI_POPNUPBLOG_BLOG_NOTIFY', 'Forum');
+define('_MI_POPNUPBLOG_BLOG_NOTIFYDSC', 'Options de notification &agrave; appliquer au blog courant.');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NOTIFY', 'Global');
-define ('_MI_POPNUPBLOG_GLOBAL_NOTIFYDSC', 'Options globales de notification de blog.');
+define('_MI_POPNUPBLOG_GLOBAL_NOTIFY', 'Global');
+define('_MI_POPNUPBLOG_GLOBAL_NOTIFYDSC', 'Options globales de notification de blog.');
 
-define ('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFY', 'Nouveau Post');
-define ('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYCAP', 'Notifiez moi de tout nouveaux post dans le blog courant.');
-define ('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYDSC', 'Recevoir une notification quand un nouveau message est publi&eacute; dans le blog courant.');
-define ('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notifification : Nouveau post dans le blog');
+define('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFY', 'Nouveau Post');
+define('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYCAP', 'Notifiez moi de tout nouveaux post dans le blog courant.');
+define('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYDSC', 'Recevoir une notification quand un nouveau message est publi&eacute; dans le blog courant.');
+define('_MI_POPNUPBLOG_BLOG_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notifification : Nouveau post dans le blog');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFY', 'Nouveau Blog');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYCAP', 'Notifiez moi quand un nouveau blog est cr&eacute;&eacute;.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYDSC', 'Recevoir une notification quand un nouveau blog est cr&eacute;&eacute;.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notification : Nouveau blog');
+define('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFY', 'Nouveau Blog');
+define('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYCAP', 'Notifiez moi quand un nouveau blog est cr&eacute;&eacute;.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYDSC', 'Recevoir une notification quand un nouveau blog est cr&eacute;&eacute;.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWBLOG_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notification : Nouveau blog');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFY', 'Nouveau Post');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYCAP', 'Notifiez moi tout nouveau post.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYDSC', 'Recevoir une notification quand un message est post&eacute;.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notification : Nouveau post');
+define('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFY', 'Nouveau Post');
+define('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYCAP', 'Notifiez moi tout nouveau post.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYDSC', 'Recevoir une notification quand un message est post&eacute;.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notification : Nouveau post');
 
-define ('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFY', 'Nouveau Post (Texte complet)');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYCAP', 'Notifiez moi tout nouveau post (Texte complet inclus dans le message).');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYDSC', 'Recevoir une notification en texte complet quand un nouveau message est post&eacute;.');
-define ('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : Nouveau post (texte complet)');
+define('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFY', 'Nouveau Post (Texte complet)');
+define('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYCAP', 'Notifiez moi tout nouveau post (Texte complet inclus dans le message).');
+define('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYDSC', 'Recevoir une notification en texte complet quand un nouveau message est post&eacute;.');
+define('_MI_POPNUPBLOG_GLOBAL_NEWFULLPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} auto-notify : Nouveau post (texte complet)');
 
 ?>
