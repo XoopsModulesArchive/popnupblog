@@ -86,11 +86,11 @@ define('_MD_POPNUPBLOG_NEWUSERREGAT','New user registration at %s');
 define('_MD_POPNUPBLOG_HASJUSTREG','%s has just registered!');
 // 1st %s is site name, 2nd %s is blog name
 define('_MD_POPNUPBLOG_POSTYOURMAIL','[%s] Your message has posted %s Blog.');
-define('_MD_POPNUPBLOG_MAILINGLIST', "%s BLOG[%s]Mailinglist");
+define('_MD_POPNUPBLOG_MAILINGLIST',"%s BLOG[%s]Mailinglist");
 define('_MI_POPNUPBLOG_ATTACHEDFILE','Your %u attached file was saved.');
 
 // After 3.0
-define('_MD_POPNUPBLOG_ML_RECEPTION', "Reception of mailing list");
+define('_MD_POPNUPBLOG_ML_RECEPTION',"Reception of mailing list");
 define('_MD_POPNUPBLOG_ML_JOIN','Join');
 define('_MD_POPNUPBLOG_ML_LEAVE','Stop');
 define('_MD_POPNUPBLOG_ML_UPDATE','Update');

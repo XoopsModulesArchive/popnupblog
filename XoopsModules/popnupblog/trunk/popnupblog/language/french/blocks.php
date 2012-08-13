@@ -11,6 +11,6 @@ define('_MB_POPNUPBLOG_UPDATE_DATE','Derni&egrave;re mis &agrave; jour');
 define('_MB_POPNUPBLOG_TITLE','Nouveau Sujet');
 define("_MB_POPNUPBLOG_VSTBLGS","Visiter les Blogs");
 define('_MB_POPNUPBLOG_TITLE_PREFIX','Blog de');
-define('_MB_POPNUPBLOG_TITLE_SUFFIX', "");
+define('_MB_POPNUPBLOG_TITLE_SUFFIX',"");
 
 ?>

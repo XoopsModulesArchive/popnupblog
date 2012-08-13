@@ -10,6 +10,6 @@ define('_MB_POPNUPBLOG_BLOG_TITLE','Blog Name');
 define('_MB_POPNUPBLOG_UPDATE_DATE','Ïîñëåäíåå îáíîâëåíèå');
 define('_MB_POPNUPBLOG_TITLE','Íàçâàíèå');
 define('_MD_POPNUPBLOG_TITLE_PREFIX','Blog');
-define('_MD_POPNUPBLOG_TITLE_SUFFIX', " ");
+define('_MD_POPNUPBLOG_TITLE_SUFFIX'," ");
 
 ?>

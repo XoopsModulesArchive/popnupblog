@@ -87,12 +87,12 @@ define('_MD_POPNUPBLOG_NEWUSERREGAT','�֥�������桼����%
 define('_MD_POPNUPBLOG_HASJUSTREG','�֥�������桼��������ޤ��������桼��̾��%s');
 
 // 1st %s is site name, 2nd %s is blog name
-define('_MD_POPNUPBLOG_POSTYOURMAIL', "%s[%s]����Ƥ��ޤ���");
-define('_MD_POPNUPBLOG_MAILINGLIST', "%s[%s]�֥��");
+define('_MD_POPNUPBLOG_POSTYOURMAIL',"%s[%s]����Ƥ��ޤ���");
+define('_MD_POPNUPBLOG_MAILINGLIST',"%s[%s]�֥��");
 define('_MI_POPNUPBLOG_ATTACHEDFILE','%u�Ĥ�ź�եե����뤬��¸����ޤ�����');
 
 // After 3.0
-define('_MD_POPNUPBLOG_ML_RECEPTION', "�᡼��󥰡��ꥹ�ȼ���");
+define('_MD_POPNUPBLOG_ML_RECEPTION',"�᡼��󥰡��ꥹ�ȼ���");
 define('_MD_POPNUPBLOG_ML_JOIN','����');
 define('_MD_POPNUPBLOG_ML_LEAVE','���');
 define('_MD_POPNUPBLOG_ML_UPDATE','����');
