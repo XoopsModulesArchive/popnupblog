@@ -5,7 +5,7 @@
 define('_MD_POPNUPBLOG_APPLICATION_APPLIED','Votre demande de blog a bien &eacute;t&eacute; enregistr&eacute;e');
 define('_MD_POPNUPBLOG_APPLICATION_BLOG_NAME','Formulaire de Cr&eacute;ation de blog');
 define('_MD_POPNUPBLOG_APPLICATION_BLOG_TITLE','Titre du Blog');
-define('_MD_POPNUPBLOG_APPLICATION_HEAD', "Vous n'&ecirc;tes pas autoris&eacute; &agrave; &eacute;crire un Blog.<br />Si vous d&eacute;sirez cependant en &eacute;crire un à votre initiative, veuillez valider le formulaire suivant.");
+define('_MD_POPNUPBLOG_APPLICATION_HEAD',"Vous n'&ecirc;tes pas autoris&eacute; &agrave; &eacute;crire un Blog.<br />Si vous d&eacute;sirez cependant en &eacute;crire un à votre initiative, veuillez valider le formulaire suivant.");
 define('_MD_POPNUPBLOG_APPLICATION_PREFERENCE','Pr&eacute;f&eacute;rence des Blogs');
 define('_MD_POPNUPBLOG_APPLICATION_SUBMIT','Valider');
 define('_MD_POPNUPBLOG_BLOG_UPDATE','Blog mis &agrave; jour!');
@@ -16,7 +16,7 @@ define('_MD_POPNUPBLOG_COMMENT_NAME_TOO_LONG','Nom trop long!');
 define('_MD_POPNUPBLOG_COMMENT_NO_COMMENT','Veuillez &eacute;crire votre commentaire!');
 define('_MD_POPNUPBLOG_DELETE_COMMENT','Votre commentaire est effac&eacute;.');	// 2004.11.01 yoshis
 define('_MD_POPNUPBLOG_DESCRIPTION','Description du Blog: ');
-define('_MD_POPNUPBLOG_ERR_APPLICATION_ALREADY_APPLIED', "Votre application l'a d&eacute;j&agrave; reçu.");
+define('_MD_POPNUPBLOG_ERR_APPLICATION_ALREADY_APPLIED',"Votre application l'a d&eacute;j&agrave; reçu.");
 define('_MD_POPNUPBLOG_ERR_APPLICATION_ALREADY_TITLED','Ce titre est d&eacute;j&agrave; enregistr&eacute;.');
 define('_MD_POPNUPBLOG_ERR_ALREADY_WRITABLE','Vous pouvez &eacute;crire maintenant!');
 define('_MD_POPNUPBLOG_ERR_INVALID_PERMISSION','permission non valide');
@@ -44,7 +44,7 @@ define('_MD_POPNUPBLOG_FORM_YES','Oui');
 define('_MD_POPNUPBLOG_GETCOMMENT','Vous recevez ce message parce que votre blog a recu un commentaire.');
 define('_MD_POPNUPBLOG_GROUPPARMITION','Permission des groupes de contribution');
 define('_MD_POPNUPBLOG_HELLO','Bonjour %s,');
-define('_MD_POPNUPBLOG_INTERNALERROR', "Une Erreur interne s'est produite");
+define('_MD_POPNUPBLOG_INTERNALERROR',"Une Erreur interne s'est produite");
 define('_MD_POPNUPBLOG_INVALID_DATE','Date non valide.');
 define('_MD_POPNUPBLOG_LINK_EDIT','Editer');
 define('_MD_POPNUPBLOG_LIST_CREATOR','Bloggueur');
@@ -87,7 +87,7 @@ define('_MD_POPNUPBLOG_NEWUSERREGAT','Nouvel enregistrement d\'utilisateur sur %
 define('_MD_POPNUPBLOG_HASJUSTREG','%s vient tout juste de s\'enregistrer!');
 // 1st %s is site name, 2nd %s is blog name
 define('_MD_POPNUPBLOG_POSTYOURMAIL','[%s] votre message a &eacute;t&eacute; post&eacute; sur le blog %s.');
-define('_MD_POPNUPBLOG_MAILINGLIST', "%s Liste de mailling du BLOG[%s]");
+define('_MD_POPNUPBLOG_MAILINGLIST',"%s Liste de mailling du BLOG[%s]");
 define('_MI_POPNUPBLOG_ATTACHEDFILE','Your %u attached file was saved.');
 //index.phpdefine('_MD_POPNUPBLOG_WRITE','Ecrire un Blog');
 

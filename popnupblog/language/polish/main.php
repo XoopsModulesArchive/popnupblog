@@ -86,7 +86,7 @@ define('_MD_POPNUPBLOG_NEWUSERREGAT','Nowy u¿ytkownik na %s');
 define('_MD_POPNUPBLOG_HASJUSTREG','%s w³a¶nie siê zarejestrowa³!');
 // 1st %s is site name, 2nd %s is blog name
 define('_MD_POPNUPBLOG_POSTYOURMAIL','[%s] Twoja wiadomo¶æ wys³ana na blog %s ');
-define('_MD_POPNUPBLOG_MAILINGLIST', "%s BLOG[%s]Lista mailingowa");
+define('_MD_POPNUPBLOG_MAILINGLIST',"%s BLOG[%s]Lista mailingowa");
 
 ?>
 <!--ISO-->
