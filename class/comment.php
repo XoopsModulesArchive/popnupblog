@@ -117,7 +117,7 @@ class pb_comment {
 			return false;
 		}
 		$result = array();
-		$ts =& MyTextSanitizer::getInstance();
+		$ts = MyTextSanitizer::getInstance();
 		if(list($blogid,$comment_uid,$text,$vote,$status,$notifypub) = $xoopsDB->fetchRow($result_select)){
 			//echo $BlogCNF['deny_words'].$text;
 			if (!preg_match($BlogCNF['deny_words'],$text)){
@@ -172,7 +172,7 @@ class pb_comment {
 	function updateComment(&$blogid,&$postid,$comment_uid,&$comment_name, $comment_id, $comment='', $updatevote=0, $status, $notifypub=NULL){
 		global $xoopsUser,$xoopsDB;
 	
-		$myts =& MyTextSanitizer::getInstance();
+		$myts = MyTextSanitizer::getInstance();
 		$comment = $myts->addSlashes( $myts->censorString( $comment ) );
 		$comment_uid = intval($comment_uid);
 		$comment_id = intval($comment_id);

@@ -23,7 +23,7 @@ require('header.php');
 	if($result == ''){
 		$new_user_notify = PopnupBlogUtils::getXoopsModuleConfig('new_user_notify');
 		if ( $new_user_notify == 1 ) {
-			$myts =& MyTextSanitizer::getInstance();
+			$myts = MyTextSanitizer::getInstance();
 			$subj = sprintf(_MD_POPNUPBLOG_NEWUSERREGAT,$xoopsConfig['sitename']);
 			$msgs = sprintf(_MD_POPNUPBLOG_HASJUSTREG,$myts->oopsStripSlashesGPC($uname));
 			sendmail::notify($xoopsConfig['adminmail'],$xoopsUser->getVar("email"),$xoopsConfig['sitename'],$subj,$msgs);

@@ -99,7 +99,7 @@ class bloginfo {
 	 */
 	function createNewBlogUser($uid='',$group_post='',$cat_id=0,$read='',$comment='',$vote='',$title='',$desc='',$email='',$emailalias=''){
 		global $xoopsUser,$xoopsDB,$BlogCNF;
-		$myts =& MyTextSanitizer::getInstance();
+		$myts = MyTextSanitizer::getInstance();
 		$title      = $myts->addSlashes( $myts->censorString( $title      ) );
 		$desc       = $myts->addSlashes( $myts->censorString( $desc       ) );
 		$email      = $myts->addSlashes( $myts->censorString( $email      ) );

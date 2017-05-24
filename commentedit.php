@@ -107,7 +107,7 @@ $delete = isset($_POST['delete']) ? 'on' : 'off';
 		}
 	}else{
 		if($preview == 'on'){
-			$ts =& MyTextSanitizer::getInstance();
+			$ts = MyTextSanitizer::getInstance();
 			$formValue['text'] = $_POST['text'];
 			$formValue['text'] = $ts->previewTarea($formValue['text'], 0, 1, 1, 1, 1);
 			$formValue['text_edit'] = $_POST['text'];

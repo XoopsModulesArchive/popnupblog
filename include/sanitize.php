@@ -65,7 +65,7 @@ function sanitize_blog($str, $isArea=false, $isURL=false, $HTMLdecode=false,$nl2
 		$patterns[] = "/about:/si";
 		$replacements[] = "about|";
 	}
-	$ts =& MyTextSanitizer::getInstance();
+	$ts = MyTextSanitizer::getInstance();
     $str = $ts->codePreConv($str);
 	$str = htmlspecialchars($str, ENT_QUOTES);
 	$str = preg_replace($patterns,$replacements, $str);

@@ -34,14 +34,14 @@ if(
 include_once '../conf.php';
 
 //$dateformat=getmoduleoption('dateformat');
-$myts =& MyTextSanitizer::getInstance();
+$myts = MyTextSanitizer::getInstance();
 $topicscount=0;
 /**
 * Get all submitted stories awaiting approval
 **/
 function getAllSubmitted($status=0){
-	$db =& Database::getInstance();
-	$myts =& MyTextSanitizer::getInstance();
+	$db = Database::getInstance();
+	$myts = MyTextSanitizer::getInstance();
 	$ret = array();
 	$sql = "SELECT s.postid, s.uid, s.title, i.title, s.blog_date FROM ".$db->prefix("popnupblog")." s, ".$db->prefix("popnupblog_info")." i ";
 	$sql .= " WHERE status=".$status." AND (s.blogid=i.blogid) ORDER BY blog_date DESC";
@@ -62,8 +62,8 @@ function getAllSubmitted($status=0){
 * Get all submitted stories awaiting approval
 **/
 function getAllComments($status=0){
-	$db =& Database::getInstance();
-	$myts =& MyTextSanitizer::getInstance();
+	$db = Database::getInstance();
+	$myts = MyTextSanitizer::getInstance();
 	$ret = array();
 	$sql = "SELECT s.postid, s.title, c.comment_id, c.comment_uid, c.post_text,c.create_date FROM ".$db->prefix("popnupblog")." s, ".$db->prefix("popnupblog_comment")." c ";
 	$sql .= " WHERE c.status=".$status." AND (s.postid=c.postid) ORDER BY create_date DESC";

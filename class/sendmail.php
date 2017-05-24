@@ -151,7 +151,7 @@ class sendmail {
 			  $message = mbstrings::_strcut($message,0,$GLOBALS['BlogCNF']['post_limit']);
 			}
 		}
-		$myts =& MyTextSanitizer::getInstance();
+		$myts = MyTextSanitizer::getInstance();
 		$message = $myts->stripSlashesGPC($message);
 		$subj = $myts->MakeTboxData4Show($subj);
 		//

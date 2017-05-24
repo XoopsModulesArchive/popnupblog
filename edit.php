@@ -177,7 +177,7 @@ if($add_mailalias == 'on') {
 	if($delete_tb == 'on' && isset($_POST['batch'])){
       $tbs = $_POST['batch'];
       $where = " WHERE 1=0 ";
-      $ts =& MyTextSanitizer::getInstance();
+      $ts = MyTextSanitizer::getInstance();
       foreach($tbs as $tbid){
         $where .= " or tbid=".$ts->addSlashes($tbid);
       }
@@ -240,7 +240,7 @@ if($add_mailalias == 'on') {
 		}
 		exit();
 	}else{
-		$ts =& MyTextSanitizer::getInstance();
+		$ts = MyTextSanitizer::getInstance();
 		if ($params['blogid'] && $params['postid'])
 			$blog = new PopnupBlog($params['blogid'],$params['postid']);
 		else

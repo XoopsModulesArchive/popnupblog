@@ -183,7 +183,7 @@ class PopnupBlogUtils {
 	}
 	function newApplication($in_title, $in_desc, $in_read,$in_comment,$in_vote, $in_gpost, $in_cid, $in_email, $in_emailalias){
 		global $xoopsUser, $xoopsDB, $xoopsConfig, $BlogCNF;
-		$myts =& MyTextSanitizer::getInstance();
+		$myts = MyTextSanitizer::getInstance();
 		$in_title      = $myts->addSlashes( $myts->censorString( $in_title      ) );
 		$in_desc       = $myts->addSlashes( $myts->censorString( $in_desc       ) );
 		$in_email      = $myts->addSlashes( $myts->censorString( $in_email      ) );
@@ -290,7 +290,7 @@ class PopnupBlogUtils {
 		$tmp = array();
 		$i = 0;
 		$reccount=0;
-		$ts =& MyTextSanitizer::getInstance();
+		$ts = MyTextSanitizer::getInstance();
 		$ugroup_post = array();
 		$pbids = array();
 		if ($xoopsUser){
@@ -369,7 +369,7 @@ class PopnupBlogUtils {
 	function getBlogInfo( $uid=0 ){
 		global $xoopsDB;
 
-		//$myts =& MyTextSanitizer::getInstance();
+		//$myts = MyTextSanitizer::getInstance();
 		$member_handler =& xoops_gethandler('member');
 		$groupnames = $member_handler->getGroupList(); 
 		$categories = category::get_categories();
@@ -674,7 +674,7 @@ class PopnupBlogUtils {
 	}
 	
 	function convert2sqlString($text){
-		$ts =& MyTextSanitizer::getInstance();
+		$ts = MyTextSanitizer::getInstance();
 		if(!is_object($ts)){
 			exit();
 		}

@@ -44,7 +44,7 @@ class emailalias {
 	}
 	function _add($bid,$pid,$email,$uid=0){
 		global $xoopsDB;
-		$myts =& MyTextSanitizer::getInstance();
+		$myts = MyTextSanitizer::getInstance();
 		$email = $myts->censorString($email);
 		$email = $myts->addSlashes($email);
 		$bid = intval($bid);
@@ -57,7 +57,7 @@ class emailalias {
 	}
 	function _delete($bid,$pid=0,$email='',$uid=0){
 		global $xoopsDB;
-		$myts =& MyTextSanitizer::getInstance();
+		$myts = MyTextSanitizer::getInstance();
 		$email = $myts->censorString($email);
 		$email = $myts->addSlashes($email);
 		$bid = intval($bid);
@@ -105,7 +105,7 @@ class emailalias {
 	//
 	function createEmailAliasInfo($blogid='', $email = ''){
 		global $xoopsUser,$xoopsDB;
-		$myts =& MyTextSanitizer::getInstance();
+		$myts = MyTextSanitizer::getInstance();
 		$email = $myts->addSlashes( $myts->censorString( $email ) );
 		
 		$debug = 0;
@@ -132,7 +132,7 @@ class emailalias {
 	//
 	function setEmailAliasInfo($blogid='', $email = ''){
 		global $xoopsUser,$xoopsDB;
-		$myts =& MyTextSanitizer::getInstance();
+		$myts = MyTextSanitizer::getInstance();
 		$email = $myts->addSlashes( $myts->censorString( $email ) );
 
 		$debug = 0;
