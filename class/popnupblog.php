@@ -65,7 +65,7 @@ class PopnupBlog {
 
 		$this->xoopsDB =& $xoopsDB;
 		$this->userHander = new XoopsUserHandler($this->xoopsDB);
-		$this->ts =& MyTextSanitizer::getInstance();
+		$this->ts = MyTextSanitizer::getInstance();
 		$this->user_list = array();
 		if(!$blogid && $postid) $this->blogid = PopnupBlogUtils::get_blogid_from_postid($postid);
 		if(!$this->blogUid) $this->loadBlogInfo($blogid);
@@ -115,7 +115,7 @@ class PopnupBlog {
 	function setBlogInfo( $cat_id=0,$title="",$desc="",$group_post=NULL,$group_read=NULL,$group_comment=NULL,$group_vote=NULL
 		,$email='',$plugin='',$ml_function=0,$pop_server='',$pop_user='',$pop_password='',$pop_address='',$default_status=NULL){
 		global $xoopsUser;
-		$myts =& MyTextSanitizer::getInstance();
+		$myts = MyTextSanitizer::getInstance();
 		$title = $myts->addSlashes( $myts->censorString( $title ) );
 		$title = htmlspecialchars($title);
 		$sql = 'UPDATE '.PBTBL_INFO.' set cat_id='.intval($cat_id);
@@ -493,7 +493,7 @@ class PopnupBlog {
 			$result['uid'] = $uid;
 			$result['title'] = $title;
 			$result['post_text'] = sanitize_blog($post_text,true,false,true);
-			$myts =& MyTextSanitizer::getInstance();
+			$myts = MyTextSanitizer::getInstance();
 			$result['text_edit'] = $myts->makeTareaData4Edit($post_text);
 			$result['status'] = $status;
 			$result['notifypub'] = $notifypub;

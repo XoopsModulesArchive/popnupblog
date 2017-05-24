@@ -41,7 +41,7 @@ foreach ($_POST as $k => $v) {
 
 switch (trim($mode)) {
 case 'editcat':
-	$myts =& MyTextSanitizer::getInstance();
+	$myts = MyTextSanitizer::getInstance();
    	if ( isset($_POST['submit']) && isset($_POST['save']) ) {
 		$new_title = $myts->makeTboxData4Save( $myts->censorString( $_POST['new_title'] ) );
 		$sql = "UPDATE ".$xoopsDB->prefix("popnupblog_categories")." SET cat_title = '$new_title' WHERE cat_id = $cat_id";
@@ -122,7 +122,7 @@ case 'editcat':
    	}
 	break;
 case 'remcat':
-	$myts =& MyTextSanitizer::getInstance();
+	$myts = MyTextSanitizer::getInstance();
     if ( isset($_POST['submit']) && $_POST['submit'] != "" ) {
 		$sql = sprintf("DELETE FROM %s WHERE cat_id = %u", $xoopsDB->prefix("popnupblog_categories"), $cat);
 		if ( !$r = $xoopsDB->query($sql) ) {
@@ -170,7 +170,7 @@ case 'remcat':
 	}
 	break;
 case 'addcat':
-	$myts =& MyTextSanitizer::getInstance();
+	$myts = MyTextSanitizer::getInstance();
     if ( isset($_POST['submit']) && $_POST['submit'] != "" ) {
 		$nextid = $xoopsDB->genId($xoopsDB->prefix("popnupblog_categories")."_cat_id_seq");
 		$sql = "SELECT max(cat_order) AS highest FROM ".$xoopsDB->prefix("popnupblog_categories")."";
@@ -216,7 +216,7 @@ case 'addcat':
 	}
 	break;
 case 'catorder':
-	$myts =& MyTextSanitizer::getInstance();
+	$myts = MyTextSanitizer::getInstance();
     xoops_cp_header();
 	include("adminmenu.php");
     echo"&nbsp;<table width='100%' border='0' cellspacing='1' class='outer'>"
